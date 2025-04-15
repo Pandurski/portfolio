@@ -91,89 +91,16 @@
       margin-bottom: 1rem;
     }
 
-        .skill-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    }
-
-    .skill-card {
-    background-color: var(--card-bg);
-    border-radius: var(--radius);
-    padding: 1.2rem;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
-    }
-
-    .skill-card:hover {
-    transform: translateY(-3px);
-    }
-
-    .skill-card h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.75rem;
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 5px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    }
-
-    .skills-list {
-    display: block;
-    margin-top: 1rem;
-    list-style-type: disc;
-    padding-left: 1.2rem;
-    }
-
-    .skills-list li {
-    color: var(--text-color);
-    padding: 2px 0;
-    font-size: 0.95rem;
-    }
-
-    .contact-links a {
-      color: var(--primary-color);
-      font-weight: 500;
-      text-decoration: none;
-      display: block;
-      margin-bottom: 0.5rem;
-      transition: color 0.3s;
-    }
-
-    .contact-links a:hover {
-      color: var(--accent-color);
-    }
-
-    footer {
-      text-align: center;
-      background: var(--primary-color);
-      color: white;
-      padding: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    @media screen and (max-width: 600px) {
-      .top-intro h1 {
-        font-size: 1.8rem;
-      }
-
-      section {
-        padding: 1.5rem;
-      }
-    }
-
     .skill-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .skill-card {
   background-color: var(--card-bg);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1.2rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 }
@@ -183,11 +110,34 @@
 }
 
 .skill-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
   color: var(--primary-color);
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skills-list {
+  display: block;
+  margin-top: 1rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  color: var(--text-color);
+  padding: 6px 0;
+  font-size: 0.95rem;
+}
+
+.skills-list li::before {
+  content: "\2022";
+  color: transparent;
+  display: inline-block;
+  width: 1.2em;
 }
 
   </style>
@@ -227,38 +177,42 @@
       <div class="skill-card">
         <h3><i class="fas fa-users-cog"></i> Leadership & Management</h3>
         <ul class="skills-list bullets">
-          <li>Agile</li><li>Scrum</li><li>Team Scaling</li><li>Stakeholder Alignment</li>
-          <li>Cross-Functional Collaboration</li><li>SDLC</li><li>Budgeting</li>
-          <li>Mentorship</li><li>Global Team Management</li><li>Release Management</li>
-          <li>Hiring</li><li>Interviewing</li><li>KPIs</li><li>Program Management</li><li>Delivery Oversight</li>
+          <li>✅ <strong>Team Leadership</strong>: Team Scaling, Mentorship, Global Team Management</li>
+          <li>✅ <strong>Project Delivery</strong>: Agile, Scrum, SDLC, Release Management, Program Management</li>
+          <li>✅ <strong>Stakeholder Engagement</strong>: Stakeholder Alignment, Cross-Functional Collaboration, KPIs</li>
+          <li>✅ <strong>Operations</strong>: Budgeting, Hiring, Interviewing, Delivery Oversight</li>
         </ul>
       </div>
   
       <div class="skill-card">
         <h3><i class="fas fa-code"></i> Software Development</h3>
         <ul class="skills-list bullets">
-          <li>Python</li><li>JavaScript</li><li>Bash</li><li>SQL</li><li>PL/SQL</li>
-          <li>FastAPI</li><li>REST APIs</li><li>UML</li><li>XML</li><li>HTML</li><li>CSS</li><li>ER Modeling</li>
-          <li>Monolithic Architecture</li><li>Microservices Architecture</li><li>System Design</li>
-          <li>Oracle APEX</li><li>ORDS</li><li>oJET</li><li>Forms</li><li>OBIEE</li><li>DV</li><li>BI Publisher</li>
+          <li>✅ <strong>Languages & Frameworks</strong>: Python, JavaScript, Bash, FastAPI, PL/SQL</li>
+          <li>✅ <strong>Frontend</strong>: HTML, CSS, oJET</li>
+          <li>✅ <strong>Backend</strong>: REST APIs, Oracle APEX, ORDS, Forms</li>
+          <li>✅ <strong>Modeling & Design</strong>: UML, ER Modeling, System Design, Monolithic & Microservices Architecture</li>
+          <li>✅ <strong>BI & Reporting</strong>: OBIEE, BI Publisher, Oracle DV</li>
+          <li>✅ <strong>Markup & Scripting</strong>: SQL, XML</li>
         </ul>
       </div>
   
       <div class="skill-card">
         <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
         <ul class="skills-list bullets">
-          <li>Oracle Cloud (OCI)</li><li>AWS</li><li>Docker</li><li>Podman</li><li>Kubernetes</li>
-          <li>Helm</li><li>Jenkins</li><li>GitLab</li><li>CI/CD</li><li>Liquibase</li>
-          <li>SQLcl</li><li>Nginx</li><li>Grafana</li><li>Jira</li><li>Shell Scripting</li>
+          <li>✅ <strong>Platforms & Tools</strong>: Oracle Cloud (OCI), AWS, Docker, Podman, Kubernetes, Helm</li>
+          <li>✅ <strong>CI/CD & Automation</strong>: Jenkins, GitLab, CI/CD, Liquibase, SQLcl, Shell Scripting</li>
+          <li>✅ <strong>Monitoring & Infra</strong>: Grafana, Nginx, Jira</li>
         </ul>
       </div>
   
       <div class="skill-card">
         <h3><i class="fas fa-brain"></i> AI & Data</h3>
         <ul class="skills-list bullets">
-          <li>OpenAI</li><li>Claude</li><li>Gemini</li><li>LLaMA</li><li>Vector Search</li><li>Embeddings</li>
-          <li>ETL</li><li>Data Warehousing</li><li>Data Lakes</li><li>PostgreSQL</li><li>MongoDB</li>
-          <li>Databricks</li><li>Snowflake</li><li>pandas</li><li>NumPy</li><li>Tableau</li>
+          <li>✅ <strong>LLMs</strong>: OpenAI, Claude, Gemini, LLaMA</li>
+          <li>✅ <strong>Search & Embeddings</strong>: Vector Search, Embeddings</li>
+          <li>✅ <strong>Data Engineering</strong>: ETL, Data Warehousing, Data Lakes</li>
+          <li>✅ <strong>SQL-Based Tech</strong>: PostgreSQL, MongoDB</li>
+          <li>✅ <strong>Modern Platforms</strong>: Snowflake, Databricks, pandas, NumPy, Tableau</li>
         </ul>
       </div>
     </div>
