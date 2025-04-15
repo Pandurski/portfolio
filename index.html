@@ -1,399 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
-     <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Igor Pandurski – Portfolio</title>
-  <style>
-    :root {
-      --primary-color: #1f2f56;
-      --accent-color: #00bcd4;
-      --bg-color: #f7f9fb;
-      --card-bg: #ffffff;
-      --text-color: #2d2d2d;
-      --muted-text: #6b7280;
-      --radius: 12px;
-    }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igor Pandurski – Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #1f2f56;
+            --accent-color: #00bcd4;
+            --bg-color: #f7f9fb;
+            --card-bg: #ffffff;
+            --text-color: #2d2d2d;
+            --muted-text: #6b7280;
+            --radius: 12px;
+        }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
 
-    .top-intro {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 3rem 1rem 2rem 1rem;
-    }
+        .top-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 1rem 2rem 1rem;
+        }
 
-    .top-intro img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 4px solid var(--accent-color);
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
+        .top-intro img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-color);
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
 
-    .top-intro h1 {
-      font-size: 2.2rem;
-      color: var(--primary-color);
-      margin-bottom: 0.2rem;
-    }
+        .top-intro h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.2rem;
+        }
 
-    .top-intro p.subtitle {
-      font-size: 1rem;
-      color: var(--muted-text);
-      margin-bottom: 0.5rem;
-    }
+        .top-intro p.subtitle {
+            font-size: 1rem;
+            color: var(--muted-text);
+            margin-bottom: 0.5rem;
+        }
 
-    .top-intro p.motto {
-      font-style: italic;
-      color: var(--accent-color);
-      font-weight: 500;
-      margin-top: 0.5rem;
-    }
+        .top-intro p.motto {
+            font-style: italic;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
 
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: var(--card-bg);
-      border-radius: var(--radius);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    }
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
 
-    section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: var(--primary-color);
-      border-bottom: 2px solid var(--accent-color);
-      padding-bottom: 5px;
-    }
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
 
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
 
-    ul li {
-      margin-bottom: 1rem;
-    }
+        ul li {
+            margin-bottom: 1rem;
+        }
 
-    .skill-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-}
+        .skill-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
 
-.skill-card {
-  background-color: var(--card-bg);
-  border-radius: var(--radius);
-  padding: 1.2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
-}
+        .skill-card {
+            background-color: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.2rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+        }
 
-.skill-card:hover {
-  transform: translateY(-3px);
-}
+        .skill-card:hover {
+            transform: translateY(-3px);
+        }
 
-.skill-card h3 {
-  font-size: 1.05rem;
-  margin-bottom: 0.75rem;
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--accent-color);
-  padding-bottom: 5px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+        .skill-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-.skills-list {
-  display: block;
-  margin-top: 1rem;
-  list-style-type: none;
-  padding-left: 0;
-}
+        .skills-list {
+            display: block;
+            margin-top: 1rem;
+            list-style-type: none;
+            padding-left: 0;
+        }
 
-.skills-list li {
-  color: var(--text-color);
-  padding: 6px 0;
-  font-size: 0.95rem;
-}
+        .skills-list li {
+            color: var(--text-color);
+            padding: 6px 0;
+            font-size: 0.95rem;
+        }
 
-.skills-list li::before {
-  content: "\2022";
-  color: transparent;
-  display: inline-block;
-  width: 1.2em;
-}
+        .skills-list li::before {
+            content: "\2022";
+            color: transparent;
+            display: inline-block;
+            width: 1.2em;
+        }
 
-.contact-links a {
-  display: block;
-  margin-bottom: 0.6rem;
-  color: var(--primary-color); /* consistent color */
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
+        .contact-links a {
+            display: block;
+            margin-bottom: 0.6rem;
+            color: var(--primary-color);
+            /* consistent color */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
 
-.contact-links a:hover {
-  color: var(--accent-color);
-}
+        .contact-links a:hover {
+            color: var(--accent-color);
+        }
 
-.contact-links a:visited {
-  color: var(--primary-color); /* prevents purple visited links */
-}
-
-
-
-.certifications-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.certifications-list li {
-  font-size: 0.95rem;
-  margin-bottom: 1.2rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--text-color);
-}
-
-.certifications-list i {
-  color: var(--accent-color);
-  font-size: 1rem;
-}
-
-.certifications-list span {
-  display: inline;
-}
-
-.education-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.education-list li {
-  font-size: 0.95rem;
-  margin-bottom: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--text-color);
-}
-
-.education-list .edu-left {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  max-width: 80%;
-}
-
-.education-list i {
-  color: var(--accent-color);
-  font-size: 1rem;
-  margin-right: 10px;
-}
-
-.education-list .edu-date {
-  font-size: 0.85rem;
-  color: var(--muted-text);
-  white-space: nowrap;
-}
-
-
-footer {
-  text-align: center;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1.2rem;
-  font-size: 0.9rem;
-  border-radius: 0 0 var(--radius) var(--radius);
-  margin-top: 3rem;
-  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
-}
+        .contact-links a:visited {
+            color: var(--primary-color);
+            /* prevents purple visited links */
+        }
 
 
 
-  </style>
+        .certifications-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .certifications-list li {
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-color);
+        }
+
+        .certifications-list i {
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        .certifications-list span {
+            display: inline;
+        }
+
+        .education-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .education-list li {
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--text-color);
+        }
+
+        .education-list .edu-left {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            max-width: 80%;
+        }
+
+        .education-list i {
+            color: var(--accent-color);
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+
+        .education-list .edu-date {
+            font-size: 0.85rem;
+            color: var(--muted-text);
+            white-space: nowrap;
+        }
+
+
+        footer {
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.2rem;
+            font-size: 0.9rem;
+            border-radius: 0 0 var(--radius) var(--radius);
+            margin-top: 3rem;
+            box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="top-intro">
-    <img src="img/igor.png" alt="Igor Pandurski" />
-    <h1>Igor Pandurski</h1>
-    <p class="motto">Keep Coding Forward</p>
-    <p class="subtitle">Software Development Manager | AI, Cloud & Data Architect</p>
-   </div>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-        I’m a Software Development Manager with over two decades of experience leading engineering teams and delivering complex software systems across diverse industries. My career spans roles in development, architecture, project and program management, and technical leadership in both enterprise and consulting settings.
-
-        I focus on building high-performing teams, fostering cross-functional collaboration, and aligning technical execution with business goals. I’ve successfully led distributed global teams, scaled agile practices, and managed full product lifecycles—from initial planning through release and ongoing optimization.
-        
-        Known for bridging the gap between engineering and strategy, I bring clarity to execution, mentor teams toward autonomy, and create environments where innovation and accountability thrive. My passion lies in delivering impact through thoughtful leadership, structured processes, and a deep commitment to quality and results
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <i class="fa-solid fa-robot" style="color: var(--accent-color); margin-right: 6px;"></i>
-        <strong><a href="https://buno.ai" target="_blank" style="color: var(--primary-color); text-decoration: none;">buno.ai</a></strong> – AI-powered enterprise assistant for centralized knowledge and document interaction, enabling employees to access business-critical info before asking around.  
-        <br/>
-        <em>Tech stack:</em> AWS, Open WebUI, Paperless, Python, FastAPI, PostgreSQL, OpenAI, Claude  
-      </li>
-    </ul>
-  </section>
-  
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-cards">
-      <div class="skill-card">
-        <h3><i class="fas fa-users-cog"></i> Leadership & Management</h3>
-        <ul class="skills-list bullets">
-          <li><i class="fas fa-users"></i> <strong>Team Leadership</strong>: Team Scaling, Mentorship, Global Team Management</li>
-          <li><i class="fas fa-tasks"></i> <strong>Project Delivery</strong>: Agile, Scrum, SDLC, Release Management, Program Management</li>
-          <li><i class="fas fa-handshake"></i> <strong>Stakeholder Engagement</strong>: Stakeholder Alignment, Cross-Functional Collab, Execs KPIs</li>
-          <li><i class="fas fa-cogs"></i> <strong>Operations</strong>: Budgeting (OPEX & CAPEX), Hiring, Interviewing, Delivery Oversight</li>
-        </ul>
-      </div>
-  
-      <div class="skill-card">
-        <h3><i class="fas fa-code"></i> Software Development</h3>
-        <ul class="skills-list bullets">
-          <li><i class="fas fa-laptop-code"></i> <strong>Languages & Frameworks</strong>: Python, JavaScript, Bash, FastAPI, PL/SQL</li>
-          <li><i class="fas fa-paint-brush"></i> <strong>Frontend</strong>: Oracle APEX, HTML, CSS, oJET</li>
-          <li><i class="fas fa-server"></i> <strong>Backend</strong>: REST APIs, ORDS, Forms</li>
-          <li><i class="fas fa-project-diagram"></i> <strong>Modeling & Design</strong>: UML, ER Modeling, System Design, Monolithic & Microservices Architecture</li>
-          <li><i class="fas fa-chart-bar"></i> <strong>BI & Reporting</strong>: OBIEE, BI Publisher, Oracle DV</li>
-          <li><i class="fas fa-code"></i> <strong>Markup & Scripting</strong>: SQL, XML</li>
-        </ul>
-      </div>
-  
-      <div class="skill-card">
-        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
-        <ul class="skills-list bullets">
-          <li><i class="fas fa-network-wired"></i> <strong>Platforms & Tools</strong>: Oracle Cloud (OCI), AWS, Docker, Podman, Kubernetes, Helm</li>
-          <li><i class="fas fa-sync-alt"></i> <strong>CI/CD & Automation</strong>: Jenkins, GitLab, CI/CD, Liquibase, SQLcl, Shell Scripting</li>
-          <li><i class="fas fa-chart-line"></i> <strong>Monitoring & Infra</strong>: Grafana, Nginx, Jira</li>
-        </ul>
-      </div>
-  
-      <div class="skill-card">
-        <h3><i class="fas fa-brain"></i> AI & Data</h3>
-        <ul class="skills-list bullets">
-          <li><i class="fas fa-robot"></i> <strong>LLMs</strong>: OpenAI, Claude, Gemini, LLaMA</li>
-          <li><i class="fas fa-search"></i> <strong>Search & Embeddings</strong>: Vector Search, Embeddings</li>
-          <li><i class="fas fa-database"></i> <strong>Data Engineering</strong>: ETL, Data Warehousing, Data Lakes</li>
-          <li><i class="fas fa-table"></i> <strong>SQL & NoSQL Tech</strong>: PostgreSQL, MongoDB</li>
-          <li><i class="fas fa-layer-group"></i> <strong>Modern Platforms</strong>: Snowflake, Databricks, pandas, NumPy, Tableau</li>
-        </ul>
-      </div>
+    <div class="top-intro">
+        <img src="img/igor.png" alt="Igor Pandurski" />
+        <h1>Igor Pandurski</h1>
+        <p class="motto">Keep Coding Forward</p>
+        <p class="subtitle">Software Development Manager | AI, Cloud & Data Architect</p>
     </div>
-  </section>
-  
 
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <ul>
-      <li><strong>Software Development Manager & Co-Founder</strong> – GeahSoft (2024–Present)</li>
-      <li><strong>Senior Principal (IC5)</strong> – Oracle (Mar–Jul 2024)</li>
-      <li><strong>Senior Application Architect</strong> – Oracle (2020–2024)</li>
-      <li><strong>Senior Technical Analyst</strong> – Oracle (2018–2020)</li>
-      <li><strong>Senior Architect / PM Roles</strong> – Insum, Region of York, Accenture</li>
-      <li><strong>Oracle Engineer & Analyst</strong> – Hatch, Thomson Reuters, QBE Insurance</li>
-    </ul>
-  </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I’m a Software Development Manager with over two decades of experience leading engineering teams and
+            delivering complex software systems across diverse industries. My career spans roles in development,
+            architecture, project and program management, and technical leadership in both enterprise and consulting
+            settings.
+            </br>
+            I focus on building high-performing teams, fostering cross-functional collaboration, and aligning technical
+            execution with business goals. I’ve successfully led distributed global teams, scaled agile practices, and
+            managed full product lifecycles—from initial planning through release and ongoing optimization.
+             </br>
+            Known for bridging the gap between engineering and strategy, I bring clarity to execution, mentor teams
+            toward autonomy, and create environments where innovation and accountability thrive. My passion lies in
+            delivering impact through thoughtful leadership, structured processes, and a deep commitment to quality and
+            results
+        </p>
+    </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul class="education-list">
-      <li>
-        <div class="edu-left">
-          <i class="fas fa-university"></i>
-          <div>
-            <strong>Edinburgh Business School, Heriot-Watt University</strong><br>
-            Master of Business Administration (MBA), Business Administration and Management
-          </div>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <i class="fa-solid fa-robot" style="color: var(--accent-color); margin-right: 6px;"></i>
+                <strong><a href="https://buno.ai" target="_blank"
+                        style="color: var(--primary-color); text-decoration: none;">buno.ai</a></strong> – AI-powered
+                enterprise assistant for centralized knowledge and document interaction, enabling employees to access
+                business-critical info before asking around.
+                <br />
+                <em>Tech stack:</em> AWS, Open WebUI, Paperless, Python, FastAPI, PostgreSQL, OpenAI, Claude
+            </li>
+        </ul>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-cards">
+            <div class="skill-card">
+                <h3><i class="fas fa-users-cog"></i> Leadership & Management</h3>
+                <ul class="skills-list bullets">
+                    <li><i class="fas fa-users"></i> <strong>Team Leadership</strong>: Team Scaling, Mentorship, Global
+                        Team Management</li>
+                    <li><i class="fas fa-tasks"></i> <strong>Project Delivery</strong>: Agile, Scrum, SDLC, Release
+                        Management, Program Management</li>
+                    <li><i class="fas fa-handshake"></i> <strong>Stakeholder Engagement</strong>: Stakeholder Alignment,
+                        Cross-Functional Collab, Execs KPIs</li>
+                    <li><i class="fas fa-cogs"></i> <strong>Operations</strong>: Budgeting (OPEX & CAPEX), Hiring,
+                        Interviewing, Delivery Oversight</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-code"></i> Software Development</h3>
+                <ul class="skills-list bullets">
+                    <li><i class="fas fa-laptop-code"></i> <strong>Languages & Frameworks</strong>: Python, JavaScript,
+                        Bash, FastAPI, PL/SQL</li>
+                    <li><i class="fas fa-paint-brush"></i> <strong>Frontend</strong>: Oracle APEX, HTML, CSS, oJET</li>
+                    <li><i class="fas fa-server"></i> <strong>Backend</strong>: REST APIs, ORDS, Forms</li>
+                    <li><i class="fas fa-project-diagram"></i> <strong>Modeling & Design</strong>: UML, ER Modeling,
+                        System Design, Monolithic & Microservices Architecture</li>
+                    <li><i class="fas fa-chart-bar"></i> <strong>BI & Reporting</strong>: OBIEE, BI Publisher, Oracle DV
+                    </li>
+                    <li><i class="fas fa-code"></i> <strong>Markup & Scripting</strong>: SQL, XML</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                <ul class="skills-list bullets">
+                    <li><i class="fas fa-network-wired"></i> <strong>Platforms & Tools</strong>: Oracle Cloud (OCI),
+                        AWS, Docker, Podman, Kubernetes, Helm</li>
+                    <li><i class="fas fa-sync-alt"></i> <strong>CI/CD & Automation</strong>: Jenkins, GitLab, CI/CD,
+                        Liquibase, SQLcl, Shell Scripting</li>
+                    <li><i class="fas fa-chart-line"></i> <strong>Monitoring & Infra</strong>: Grafana, Nginx, Jira</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3><i class="fas fa-brain"></i> AI & Data</h3>
+                <ul class="skills-list bullets">
+                    <li><i class="fas fa-robot"></i> <strong>LLMs</strong>: OpenAI, Claude, Gemini, LLaMA</li>
+                    <li><i class="fas fa-search"></i> <strong>Search & Embeddings</strong>: Vector Search, Embeddings
+                    </li>
+                    <li><i class="fas fa-database"></i> <strong>Data Engineering</strong>: ETL, Data Warehousing, Data
+                        Lakes</li>
+                    <li><i class="fas fa-table"></i> <strong>SQL & NoSQL Tech</strong>: PostgreSQL, MongoDB</li>
+                    <li><i class="fas fa-layer-group"></i> <strong>Modern Platforms</strong>: Snowflake, Databricks,
+                        pandas, NumPy, Tableau</li>
+                </ul>
+            </div>
         </div>
-        <span class="date">Sep 2021 – Sep 2025</span>
-      </li>
-      <li>
-        <div class="edu-left">
-          <i class="fas fa-university"></i>
-          <div>
-            <strong>The George Washington University School of Business</strong><br>
-            Project Planning, Analysis, and Control (Certificate Program)
-          </div>
+    </section>
+
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Software Development Manager & Co-Founder</strong> – GeahSoft (2024–Present)</li>
+            <li><strong>Senior Principal (IC5)</strong> – Oracle (Mar–Jul 2024)</li>
+            <li><strong>Senior Application Architect</strong> – Oracle (2020–2024)</li>
+            <li><strong>Senior Technical Analyst</strong> – Oracle (2018–2020)</li>
+            <li><strong>Senior Architect / PM Roles</strong> – Insum, Region of York, Accenture</li>
+            <li><strong>Oracle Engineer & Analyst</strong> – Hatch, Thomson Reuters, QBE Insurance</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul class="education-list">
+            <li>
+                <div class="edu-left">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <strong>Edinburgh Business School, Heriot-Watt University</strong><br>
+                        Master of Business Administration (MBA), Business Administration and Management
+                    </div>
+                </div>
+                <span class="date">Sep 2021 – Sep 2025</span>
+            </li>
+            <li>
+                <div class="edu-left">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <strong>The George Washington University School of Business</strong><br>
+                        Project Planning, Analysis, and Control (Certificate Program)
+                    </div>
+                </div>
+                <span class="date">2012</span>
+            </li>
+            <li>
+                <div class="edu-left">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <strong>Military Academy “General Mihailo Apostolski” – Skopje</strong><br>
+                        Bachelor's Degree, Engineering
+                    </div>
+                </div>
+                <span class="date">1996 – 2000</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul class="certifications-list">
+            <li><i class="fas fa-certificate"></i><span>Oracle Cloud Infrastructure 2025 Certified Foundations
+                    Associate</span></li>
+            <li><i class="fas fa-certificate"></i><span>Oracle Fusion Cloud Applications HCM Certified Foundations
+                    Associate</span></li>
+            <li><i class="fas fa-leaf"></i><span>MongoDB Data Modeling</span></li>
+            <li><i class="fas fa-certificate"></i><span>Oracle Application Express 18: Developer Certified
+                    Professional</span></li>
+            <li><i class="fas fa-clipboard-check"></i><span>Project Management Professional (PMP)®</span></li>
+            <li><i class="fas fa-project-diagram"></i><span>Project Planning, Analysis, and Control</span></li>
+            <li><i class="fas fa-certificate"></i><span>Oracle Forms: Build Internet Applications (OCP)</span></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:igor@pandurski.com"><i class="fas fa-envelope"></i> igor@pandurski.com</a>
+            <a href="https://github.com/pandurski" target="_blank"><i class="fab fa-github"></i>
+                github.com/pandurski</a>
+            <a href="https://linkedin.com/in/igorpandurski" target="_blank"><i class="fab fa-linkedin"></i>
+                linkedin.com/in/igorpandurski</a>
         </div>
-        <span class="date">2012</span>
-      </li>
-      <li>
-        <div class="edu-left">
-          <i class="fas fa-university"></i>
-          <div>
-            <strong>Military Academy “General Mihailo Apostolski” – Skopje</strong><br>
-            Bachelor's Degree, Engineering
-          </div>
-        </div>
-        <span class="date">1996 – 2000</span>
-      </li>
-    </ul>
-  </section>
+    </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul class="certifications-list">
-      <li><i class="fas fa-certificate"></i><span>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</span></li>
-      <li><i class="fas fa-certificate"></i><span>Oracle Fusion Cloud Applications HCM Certified Foundations Associate</span></li>
-      <li><i class="fas fa-leaf"></i><span>MongoDB Data Modeling</span></li>
-      <li><i class="fas fa-certificate"></i><span>Oracle Application Express 18: Developer Certified Professional</span></li>
-      <li><i class="fas fa-clipboard-check"></i><span>Project Management Professional (PMP)®</span></li>
-      <li><i class="fas fa-project-diagram"></i><span>Project Planning, Analysis, and Control</span></li>
-      <li><i class="fas fa-certificate"></i><span>Oracle Forms: Build Internet Applications (OCP)</span></li>
-    </ul>
-  </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-links">
-      <a href="mailto:igor@pandurski.com"><i class="fas fa-envelope"></i> igor@pandurski.com</a>
-      <a href="https://github.com/pandurski" target="_blank"><i class="fab fa-github"></i> github.com/pandurski</a>
-      <a href="https://linkedin.com/in/igorpandurski" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/igorpandurski</a>
-    </div>
-  </section>
-  
-
-  <footer>
-    &copy; 2025 Igor Pandurski &nbsp;|&nbsp; <em>Keep Coding Forward</em>
-  </footer>
+    <footer>
+        &copy; 2025 Igor Pandurski &nbsp;|&nbsp; <em>Keep Coding Forward</em>
+    </footer>
 
 </body>
+
 </html>
