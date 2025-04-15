@@ -140,6 +140,24 @@
   width: 1.2em;
 }
 
+.contact-links a {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--primary-color); /* consistent color */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: var(--accent-color);
+}
+
+.contact-links a:visited {
+  color: var(--primary-color); /* prevents purple visited links */
+}
+
+
   </style>
 </head>
 <body>
@@ -253,11 +271,12 @@
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact-links">
-      <a href="mailto:igor@pandurski.com">igor@pandurski.com</a>
-      <a href="https://github.com/pandurski" target="_blank">github.com/pandurski</a>
-      <a href="https://www.linkedin.com/in/pandurski/" target="_blank">linkedin.com/in/pandurski</a>
+      <a href="mailto:igor@pandurski.com"><i class="fas fa-envelope"></i> igor@pandurski.com</a>
+      <a href="https://github.com/pandurski" target="_blank"><i class="fab fa-github"></i> github.com/pandurski</a>
+      <a href="https://linkedin.com/in/igorpandurski" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/igorpandurski</a>
     </div>
   </section>
+  
 
   <footer>
     &copy; 2025 Igor Pandurski. Keep Coding Forward.
