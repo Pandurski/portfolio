@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" integrity="sha384-BuKjXuhYAXNsSjcS12QeAOFzYZ2+yc1iJk0Wi9zZm0OhdYtv3kuy1mQ9x7N2kc9X" crossorigin="anonymous">
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+     <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Igor Pandurski – Portfolio</title>
   <style>
@@ -91,24 +91,46 @@
       margin-bottom: 1rem;
     }
 
+        .skill-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    }
+
+    .skill-card {
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    }
+
+    .skill-card:hover {
+    transform: translateY(-3px);
+    }
+
+    .skill-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    }
+
     .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 1rem;
+    display: block;
+    margin-top: 1rem;
+    list-style-type: disc;
+    padding-left: 1.2rem;
     }
 
     .skills-list li {
-      background: var(--accent-color);
-      color: white;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      transition: background 0.3s;
-    }
-
-    .skills-list li:hover {
-      background: #0097a7;
+    color: var(--text-color);
+    padding: 2px 0;
+    font-size: 0.95rem;
     }
 
     .contact-links a {
@@ -201,11 +223,10 @@
 
   <section id="skills">
     <h2>Skills</h2>
-  
     <div class="skill-cards">
       <div class="skill-card">
-        <h3>Leadership & Management</h3>
-        <ul class="skills-list">
+        <h3><i class="fas fa-users-cog"></i> Leadership & Management</h3>
+        <ul class="skills-list bullets">
           <li>Agile</li><li>Scrum</li><li>Team Scaling</li><li>Stakeholder Alignment</li>
           <li>Cross-Functional Collaboration</li><li>SDLC</li><li>Budgeting</li>
           <li>Mentorship</li><li>Global Team Management</li><li>Release Management</li>
@@ -214,8 +235,8 @@
       </div>
   
       <div class="skill-card">
-        <h3>Software Development</h3>
-        <ul class="skills-list">
+        <h3><i class="fas fa-code"></i> Software Development</h3>
+        <ul class="skills-list bullets">
           <li>Python</li><li>JavaScript</li><li>Bash</li><li>SQL</li><li>PL/SQL</li>
           <li>FastAPI</li><li>REST APIs</li><li>UML</li><li>XML</li><li>HTML</li><li>CSS</li><li>ER Modeling</li>
           <li>Monolithic Architecture</li><li>Microservices Architecture</li><li>System Design</li>
@@ -224,8 +245,8 @@
       </div>
   
       <div class="skill-card">
-        <h3>Cloud & DevOps</h3>
-        <ul class="skills-list">
+        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+        <ul class="skills-list bullets">
           <li>Oracle Cloud (OCI)</li><li>AWS</li><li>Docker</li><li>Podman</li><li>Kubernetes</li>
           <li>Helm</li><li>Jenkins</li><li>GitLab</li><li>CI/CD</li><li>Liquibase</li>
           <li>SQLcl</li><li>Nginx</li><li>Grafana</li><li>Jira</li><li>Shell Scripting</li>
@@ -233,8 +254,8 @@
       </div>
   
       <div class="skill-card">
-        <h3>AI & Data</h3>
-        <ul class="skills-list">
+        <h3><i class="fas fa-brain"></i> AI & Data</h3>
+        <ul class="skills-list bullets">
           <li>OpenAI</li><li>Claude</li><li>Gemini</li><li>LLaMA</li><li>Vector Search</li><li>Embeddings</li>
           <li>ETL</li><li>Data Warehousing</li><li>Data Lakes</li><li>PostgreSQL</li><li>MongoDB</li>
           <li>Databricks</li><li>Snowflake</li><li>pandas</li><li>NumPy</li><li>Tableau</li>
