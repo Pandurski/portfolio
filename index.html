@@ -156,8 +156,8 @@
 .contact-links a:visited {
   color: var(--primary-color); /* prevents purple visited links */
 }
-
-.certifications-list {
+.certifications-list,
+.education-list {
   list-style: none;
   padding-left: 0;
   margin-top: 2rem;
@@ -166,17 +166,25 @@
   margin-right: auto;
 }
 
-.certifications-list li {
+.certifications-list li,
+.education-list li {
   font-size: 0.95rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 4px;
   color: var(--text-color);
 }
 
-.certifications-list i {
+.certifications-list i,
+.education-list i {
   color: var(--accent-color);
+  margin-bottom: 0.25rem;
+}
+
+.education-list .date {
+  font-size: 0.85rem;
+  color: var(--muted-text);
 }
 
 footer {
@@ -190,16 +198,7 @@ footer {
   box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
 }
 
-footer {
-  text-align: center;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1.2rem;
-  font-size: 0.9rem;
-  border-radius: 0 0 var(--radius) var(--radius);
-  margin-top: 3rem;
-  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
-}
+
 
   </style>
 </head>
@@ -294,10 +293,22 @@ footer {
 
   <section id="education">
     <h2>Education</h2>
-    <ul>
-      <li><strong>MBA</strong> (in progress) – Heriot-Watt University, UK (Sep 2025)</li>
-      <li><strong>Project Control</strong> – George Brown University, Canada</li>
-      <li><strong>Bachelor’s in Engineering</strong> – Military Academy, Macedonia</li>
+    <ul class="education-list">
+      <li>
+        <i class="fas fa-university"></i> <strong>Edinburgh Business School, Heriot-Watt University</strong><br>
+        Master of Business Administration (MBA), Business Administration and Management<br>
+        <span class="date">Sep 2021 – Sep 2025</span>
+      </li>
+      <li>
+        <i class="fas fa-university"></i> <strong>The George Washington University School of Business</strong><br>
+        Project Planning, Analysis, and Control (Certificate Program)<br>
+        <span class="date">2012</span>
+      </li>
+      <li>
+        <i class="fas fa-university"></i> <strong>Military Academy “General Mihailo Apostolski” – Skopje</strong><br>
+        Bachelor's Degree, Engineering<br>
+        <span class="date">1996 – 2000</span>
+      </li>
     </ul>
   </section>
 
