@@ -157,6 +157,39 @@
   color: var(--primary-color); /* prevents purple visited links */
 }
 
+.certifications-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.certifications-list li {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.certifications-list i {
+  color: var(--accent-color);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 0 0 var(--radius) var(--radius);
+  margin-top: 3rem;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
+}
+
 footer {
   text-align: center;
   background-color: var(--primary-color);
@@ -270,11 +303,14 @@ footer {
 
   <section id="certifications">
     <h2>Certifications</h2>
-    <ul>
-      <li>Oracle Certified Professional</li>
-      <li>OCI Architect & Fusion HCM</li>
-      <li>MongoDB Data Modeling</li>
-      <li>Project Management Professional (PMP)</li>
+    <ul class="certifications-list">
+      <li><i class="fas fa-certificate"></i> Oracle Cloud Infrastructure 2025 Certified Foundations Associate</li>
+      <li><i class="fas fa-certificate"></i> Oracle Fusion Cloud Applications HCM Certified Foundations Associate</li>
+      <li><i class="fas fa-leaf"></i> MongoDB Data Modeling</li>
+      <li><i class="fas fa-certificate"></i> Oracle Application Express 18: Developer Certified Professional</li>
+      <li><i class="fas fa-clipboard-check"></i> Project Management Professional (PMP)®</li>
+      <li><i class="fas fa-project-diagram"></i> Project Planning, Analysis, and Control</li>
+      <li><i class="fas fa-certificate"></i> Oracle Forms: Build Internet Applications (OCP)</li>
     </ul>
   </section>
 
