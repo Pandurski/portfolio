@@ -156,6 +156,8 @@
 .contact-links a:visited {
   color: var(--primary-color); /* prevents purple visited links */
 }
+
+
 .certifications-list,
 .education-list {
   list-style: none;
@@ -172,7 +174,7 @@
   margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
   color: var(--text-color);
 }
 
@@ -180,16 +182,26 @@
 .education-list i {
   color: var(--accent-color);
   font-size: 1rem;
+  margin-right: 10px;
 }
 
 .certifications-list span {
   display: inline;
 }
 
+.education-list .edu-left {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  max-width: 80%;
+}
+
 .education-list .date {
   font-size: 0.85rem;
   color: var(--muted-text);
+  white-space: nowrap;
 }
+
 
 footer {
   text-align: center;
@@ -299,18 +311,33 @@ footer {
     <h2>Education</h2>
     <ul class="education-list">
       <li>
-        <i class="fas fa-university"></i> <strong>Edinburgh Business School, Heriot-Watt University</strong><br>
-        Master of Business Administration (MBA), Business Administration and Management<br>
+        <div class="edu-left">
+          <i class="fas fa-university"></i>
+          <div>
+            <strong>Edinburgh Business School, Heriot-Watt University</strong><br>
+            Master of Business Administration (MBA), Business Administration and Management
+          </div>
+        </div>
         <span class="date">Sep 2021 – Sep 2025</span>
       </li>
       <li>
-        <i class="fas fa-university"></i> <strong>The George Washington University School of Business</strong><br>
-        Project Planning, Analysis, and Control (Certificate Program)<br>
+        <div class="edu-left">
+          <i class="fas fa-university"></i>
+          <div>
+            <strong>The George Washington University School of Business</strong><br>
+            Project Planning, Analysis, and Control (Certificate Program)
+          </div>
+        </div>
         <span class="date">2012</span>
       </li>
       <li>
-        <i class="fas fa-university"></i> <strong>Military Academy “General Mihailo Apostolski” – Skopje</strong><br>
-        Bachelor's Degree, Engineering<br>
+        <div class="edu-left">
+          <i class="fas fa-university"></i>
+          <div>
+            <strong>Military Academy “General Mihailo Apostolski” – Skopje</strong><br>
+            Bachelor's Degree, Engineering
+          </div>
+        </div>
         <span class="date">1996 – 2000</span>
       </li>
     </ul>
