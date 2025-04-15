@@ -158,7 +158,34 @@
 }
 
 
-.certifications-list,
+
+.certifications-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.certifications-list li {
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.certifications-list i {
+  color: var(--accent-color);
+  font-size: 1rem;
+}
+
+.certifications-list span {
+  display: inline;
+}
+
 .education-list {
   list-style: none;
   padding-left: 0;
@@ -168,7 +195,6 @@
   margin-right: auto;
 }
 
-.certifications-list li,
 .education-list li {
   font-size: 0.95rem;
   margin-bottom: 1.2rem;
@@ -178,17 +204,6 @@
   color: var(--text-color);
 }
 
-.certifications-list i,
-.education-list i {
-  color: var(--accent-color);
-  font-size: 1rem;
-  margin-right: 10px;
-}
-
-.certifications-list span {
-  display: inline;
-}
-
 .education-list .edu-left {
   display: flex;
   gap: 10px;
@@ -196,7 +211,13 @@
   max-width: 80%;
 }
 
-.education-list .date {
+.education-list i {
+  color: var(--accent-color);
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.education-list .edu-date {
   font-size: 0.85rem;
   color: var(--muted-text);
   white-space: nowrap;
@@ -346,13 +367,13 @@ footer {
   <section id="certifications">
     <h2>Certifications</h2>
     <ul class="certifications-list">
-      <li><i class="fas fa-certificate"></i> Oracle Cloud Infrastructure 2025 Certified Foundations Associate</li>
-      <li><i class="fas fa-certificate"></i> Oracle Fusion Cloud Applications HCM Certified Foundations Associate</li>
-      <li><i class="fas fa-leaf"></i> MongoDB Data Modeling</li>
-      <li><i class="fas fa-certificate"></i> Oracle Application Express 18: Developer Certified Professional</li>
-      <li><i class="fas fa-clipboard-check"></i> Project Management Professional (PMP)®</li>
-      <li><i class="fas fa-project-diagram"></i> Project Planning, Analysis, and Control</li>
-      <li><i class="fas fa-certificate"></i> Oracle Forms: Build Internet Applications (OCP)</li>
+      <li><i class="fas fa-certificate"></i><span>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</span></li>
+      <li><i class="fas fa-certificate"></i><span>Oracle Fusion Cloud Applications HCM Certified Foundations Associate</span></li>
+      <li><i class="fas fa-leaf"></i><span>MongoDB Data Modeling</span></li>
+      <li><i class="fas fa-certificate"></i><span>Oracle Application Express 18: Developer Certified Professional</span></li>
+      <li><i class="fas fa-clipboard-check"></i><span>Project Management Professional (PMP)®</span></li>
+      <li><i class="fas fa-project-diagram"></i><span>Project Planning, Analysis, and Control</span></li>
+      <li><i class="fas fa-certificate"></i><span>Oracle Forms: Build Internet Applications (OCP)</span></li>
     </ul>
   </section>
 
