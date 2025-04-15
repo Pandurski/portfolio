@@ -28,36 +28,45 @@
       line-height: 1.6;
     }
 
-    header {
-      background: var(--primary-color);
-      color: white;
+    .top-intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      padding: 3rem 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 3rem 1rem 2rem 1rem;
     }
 
-    header img {
-      width: 150px;
-      height: 150px;
+    .top-intro img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      border: 5px solid var(--accent-color);
+      border: 4px solid var(--accent-color);
       object-fit: cover;
       margin-bottom: 1rem;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.25rem;
+    .top-intro h1 {
+      font-size: 2.2rem;
+      color: var(--primary-color);
+      margin-bottom: 0.2rem;
     }
 
-    header p {
-      font-size: 1.1rem;
+    .top-intro p.subtitle {
+      font-size: 1rem;
+      color: var(--muted-text);
+      margin-bottom: 0.5rem;
+    }
+
+    .top-intro p.motto {
+      font-style: italic;
       color: var(--accent-color);
+      font-weight: 500;
+      margin-top: 0.5rem;
     }
 
     section {
       max-width: 900px;
-      margin: 2.5rem auto;
+      margin: 2rem auto;
       padding: 2rem;
       background-color: var(--card-bg);
       border-radius: var(--radius);
@@ -123,8 +132,8 @@
     }
 
     @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+      .top-intro h1 {
+        font-size: 1.8rem;
       }
 
       section {
@@ -135,12 +144,13 @@
 </head>
 <body>
 
-  <header>
-    <img src="img/igor.png" alt="Igor Pandurski">
+  <div class="top-intro">
+    <img src="img/igor.png" alt="Igor Pandurski" />
     <h1>Igor Pandurski</h1>
-    <p>Software Development Manager | AI, Cloud & Data Architect</p>
-    <p><a href="https://pandurski.com" style="color: #fff; text-decoration: underline;">pandurski.com</a></p>
-  </header>
+    <p class="subtitle">Software Development Manager | AI, Cloud & Data Architect</p>
+    <p class="motto">Keep Coding Forward</p>
+    <p><a href="https://pandurski.com" style="color: var(--accent-color); text-decoration: underline;">pandurski.com</a></p>
+  </div>
 
   <section id="about">
     <h2>About Me</h2>
@@ -209,7 +219,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Igor Pandurski. All rights reserved.
+    &copy; 2025 Igor Pandurski. Keep Coding Forward.
   </footer>
 
 </body>
