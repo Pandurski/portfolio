@@ -3,94 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Igor Pandurski - Portfolio</title>
+  <title>Igor Pandurski – Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    :root {
+      --primary-color: #1f2f56;
+      --accent-color: #00bcd4;
+      --bg-color: #f7f9fb;
+      --card-bg: #ffffff;
+      --text-color: #2d2d2d;
+      --muted-text: #6b7280;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       line-height: 1.6;
     }
+
     header {
+      background: var(--primary-color);
+      color: white;
       text-align: center;
-      padding: 40px 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 3rem 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
-    .profile-img {
+
+    header img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
+      border: 5px solid var(--accent-color);
       object-fit: cover;
-      margin-bottom: 15px;
-      border: 3px solid #ddd;
+      margin-bottom: 1rem;
     }
-    h1, h2 {
-      color: #2c3e50;
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
     }
-    h2 {
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
+
+    header p {
+      font-size: 1.1rem;
+      color: var(--accent-color);
     }
+
     section {
       max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      background-color: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 5px;
+    }
+
     ul {
       list-style-type: none;
-      padding: 0;
+      padding-left: 0;
     }
+
     ul li {
-      margin-bottom: 10px;
+      margin-bottom: 1rem;
     }
+
     .skills-list {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      margin-top: 1rem;
     }
+
     .skills-list li {
-      background-color: #3498db;
+      background: var(--accent-color);
       color: white;
-      padding: 5px 10px;
-      border-radius: 15px;
-      font-size: 0.9em;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: background 0.3s;
     }
+
+    .skills-list li:hover {
+      background: #0097a7;
+    }
+
     .contact-links a {
-      color: #3498db;
+      color: var(--primary-color);
+      font-weight: 500;
       text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s;
     }
+
     .contact-links a:hover {
-      text-decoration: underline;
+      color: var(--accent-color);
     }
+
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #2c3e50;
+      background: var(--primary-color);
       color: white;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="img/igor.png" alt="Profile Picture" class="profile-img" />
+    <img src="img/igor.png" alt="Igor Pandurski">
     <h1>Igor Pandurski</h1>
-    <p>Keep Coding Forward</p>
-    <p>Software Development Manager | AI & Cloud | 20+ Years Leading Global Engineering</p>
-    <p><a href="https://pandurski.com">pandurski.com</a> | igor.pandurski@gmail.com</p>
+    <p>Software Development Manager | AI, Cloud & Data Architect</p>
+    <p><a href="https://pandurski.com" style="color: #fff; text-decoration: underline;">pandurski.com</a></p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I’m a seasoned Software Development Manager and technical leader with over 20 years of experience delivering scalable software, cloud, and AI-enabled solutions across global teams. I co-founded GeahSoft, driving enterprise innovation and leading cross-functional engineering efforts across North America and Europe.
+      I’m a Software Development Manager with 20+ years of experience leading global teams and delivering enterprise software, data, and AI solutions across North America, Europe, and beyond. I thrive on solving complex problems, building teams, and driving innovation across cloud and digital transformation programs.
     </p>
   </section>
 
@@ -105,86 +160,56 @@
       <li>FastAPI</li>
       <li>Docker / Kubernetes</li>
       <li>CI/CD</li>
-      <li>Microservices</li>
       <li>REST APIs</li>
       <li>AI / LLMs</li>
-      <li>ETL / Data Lakes</li>
+      <li>Data Lakes / ETL</li>
       <li>Project Management</li>
-      <li>Team Leadership</li>
     </ul>
   </section>
 
   <section id="experience">
     <h2>Work Experience</h2>
     <ul>
-      <li>
-        <strong>Software Development Manager & Co-Founder</strong> – GeahSoft (Jul 2024 – Present)
-        <ul>
-          <li>Founded a consulting practice focused on software, data, and AI solutions.</li>
-          <li>Led distributed teams and secured $600K+ in projects.</li>
-          <li>Product Owner for bunoAI – an internal AI assistant.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Senior Principal (IC5), Consulting Member of Technical Staff</strong> – Oracle (Mar 2024 – Jul 2024)
-        <ul>
-          <li>Led architecture for a cloud-based Patient Admin System featured at Oracle CloudWorld 2024.</li>
-          <li>Reviewed ECAR architecture submissions and mentored engineers.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Senior Application Architect (IC5)</strong> – Oracle (Dec 2020 – Mar 2024)
-        <ul>
-          <li>Delivered enterprise apps for Revenue Ops & Sales Automation.</li>
-          <li>Led global teams, migrated 60+ apps, and saved $2M/year.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Senior Technical Analyst (IC4)</strong> – Oracle (May 2018 – Dec 2020)
-        <ul>
-          <li>Built global APEX tools and improved data accessibility.</li>
-          <li>Optimized performance and supported mission-critical systems.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Earlier Roles:</strong> Senior Architect @ Insum, Project Manager @ Region of York & Accenture, Oracle Engineer @ Hatch, Analyst @ Thomson Reuters, Software Engineer @ QBE Insurance.
-      </li>
+      <li><strong>Software Development Manager & Co-Founder</strong> – GeahSoft (2024–Present)</li>
+      <li><strong>Senior Principal (IC5)</strong> – Oracle (Mar–Jul 2024)</li>
+      <li><strong>Senior Application Architect</strong> – Oracle (2020–2024)</li>
+      <li><strong>Senior Technical Analyst</strong> – Oracle (2018–2020)</li>
+      <li><strong>Senior Architect / PM Roles</strong> – Insum, Region of York, Accenture</li>
+      <li><strong>Oracle Engineer & Analyst</strong> – Hatch, Thomson Reuters, QBE Insurance</li>
     </ul>
   </section>
 
   <section id="education">
     <h2>Education</h2>
     <ul>
-      <li><strong>MBA (In Progress)</strong> – Heriot-Watt University, UK (Expected Sep 2025)</li>
-      <li><strong>Project Control</strong> – George Brown University, Canada (2012)</li>
-      <li><strong>Bachelor’s in Engineering</strong> – Military Academy, Macedonia (2000)</li>
+      <li><strong>MBA</strong> (in progress) – Heriot-Watt University, UK (Sep 2025)</li>
+      <li><strong>Project Control</strong> – George Brown University, Canada</li>
+      <li><strong>Bachelor’s in Engineering</strong> – Military Academy, Macedonia</li>
     </ul>
   </section>
 
   <section id="certifications">
     <h2>Certifications</h2>
     <ul>
-      <li>Oracle Certified Professional (OCP)</li>
-      <li>Oracle Cloud Infrastructure (OCI)</li>
-      <li>Fusion HCM</li>
+      <li>Oracle Certified Professional</li>
+      <li>OCI Architect & Fusion HCM</li>
       <li>MongoDB Data Modeling</li>
       <li>Project Management Professional (PMP)</li>
-      <li>Project Planning and Control</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p class="contact-links">
-      Email: <a href="mailto:igor.pandurski@gmail.com">igor.pandurski@gmail.com</a><br>
-      GitHub: <a href="https://github.com/pandurski" target="_blank">github.com/pandurski</a><br>
-      LinkedIn: <a href="https://linkedin.com/in/igorpandurski" target="_blank">linkedin.com/in/igorpandurski</a><br>
-      Website: <a href="https://pandurski.com" target="_blank">pandurski.com</a>
-    </p>
+    <div class="contact-links">
+      <a href="mailto:igor.pandurski@gmail.com">igor.pandurski@gmail.com</a>
+      <a href="https://github.com/pandurski" target="_blank">github.com/pandurski</a>
+      <a href="https://linkedin.com/in/igorpandurski" target="_blank">linkedin.com/in/igorpandurski</a>
+      <a href="https://pandurski.com" target="_blank">pandurski.com</a>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Igor Pandurski. All rights reserved.</p>
+    &copy; 2025 Igor Pandurski. All rights reserved.
   </footer>
 
 </body>
