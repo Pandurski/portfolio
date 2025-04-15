@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,7 +72,7 @@
             margin-top: 0.5rem;
         }
 
-    
+
         section {
             max-width: 900px;
             margin: 2rem auto;
@@ -232,46 +232,47 @@
             color: var(--muted-text);
             white-space: nowrap;
         }
+
+        .exp-date {
+            font-size: 0.95rem;
+            color: var(--muted-text);
+        }
+
         .timeline {
-  position: relative;
-  margin-left: 20px;
-  border-left: 2px solid var(--accent-color);
-  padding-left: 20px;
-}
+            position: relative;
+            padding-left: 30px;
+            border-left: 2px solid var(--accent-color);
+            margin-top: 30px;
+        }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 30px;
-}
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
 
-.timeline-marker {
-  position: absolute;
-  left: -30px;
-  top: 0;
-  background: var(--accent-color);
-  color: #fff;
-  width: 24px;
-  height: 24px;
-  font-size: 0.85rem;
-  text-align: center;
-  line-height: 24px;
-  border-radius: 50%;
-  font-weight: bold;
-}
+        .timeline-marker {
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            position: absolute;
+            left: -7px;
+            top: 5px;
+        }
 
-.timeline-content {
-  padding-left: 10px;
-}
+        .timeline-content {
+            padding-left: 10px;
+        }
 
-.timeline-content strong {
-  font-size: 1.1rem;
-  color: var(--primary-color);
-}
+        .timeline-content strong {
+            font-size: 1.05rem;
+            color: var(--primary-color);
+        }
 
-.exp-date {
-  font-size: 0.95rem;
-  color: var(--muted-text);
-}
+        .timeline-content span {
+            font-size: 0.95rem;
+            color: var(--muted-text);
+        }
 
 
         footer {
@@ -409,62 +410,110 @@
         </div>
     </section>
 
-
     <section id="experience" class="styled-section">
         <h2 class="section-heading"><i class="fas fa-briefcase"></i> Work Experience</h2>
-        <ul class="experience-list condensed">
-          <li>
-            <strong>Software Development Manager & Co-Founder</strong><br>
-            <span>GeahSoft – Burlington, Canada | 2024–Present</span>
-          </li>
-          <li>
-            <strong>Senior Principal (IC5)</strong><br>
-            <span>Oracle – Toronto, Canada | Mar–Jul 2024</span>
-          </li>
-          <li>
-            <strong>Senior Application Architect</strong><br>
-            <span>Oracle – Toronto, Canada | 2020–2024</span>
-          </li>
-          <li>
-            <strong>Senior Technical Analyst</strong><br>
-            <span>Oracle – Toronto, Canada | 2018–2020</span>
-          </li>
-          <li>
-            <strong>Senior Architect</strong><br>
-            <span>Insum – Remote | 2017–2018</span>
-          </li>
-          <li>
-            <strong>Technical Project Manager</strong><br>
-            <span>Region of York – Newmarket, Canada | 2016–2017</span>
-          </li>
-          <li>
-            <strong>Technical Project Manager</strong><br>
-            <span>Accenture – Oakville, Canada | 2014–2016</span>
-          </li>
-          <li>
-            <strong>Oracle Applications Engineer</strong><br>
-            <span>Hatch – Mississauga, Canada | 2011–2014</span>
-          </li>
-          <li>
-            <strong>Technical Business Analyst</strong><br>
-            <span>Thomson Reuters – Toronto, Canada | 2010–2011</span>
-          </li>
-          <li>
-            <strong>Technical Project Manager</strong><br>
-            <span>Thomson Reuters – New York, USA | 2008–2010</span>
-          </li>
-          <li>
-            <strong>Senior Oracle Engineer</strong><br>
-            <span>QBE Insurance – Skopje, Macedonia | 2005–2008</span>
-          </li>
-          <li>
-            <strong>Oracle Software Engineer</strong><br>
-            <span>QBE Insurance – Skopje, Macedonia | 2002–2005</span>
-          </li>
-        </ul>
-      </section>
-      
-      
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Software Development Manager & Co-Founder</strong><br>
+                    <span>GeahSoft – Burlington, Canada | 2024–Present</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Senior Principal (IC5)</strong><br>
+                    <span>Oracle – Toronto, Canada | Mar–Jul 2024</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Senior Application Architect</strong><br>
+                    <span>Oracle – Toronto, Canada | 2020–2024</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Senior Technical Analyst</strong><br>
+                    <span>Oracle – Toronto, Canada | 2018–2020</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Senior Architect</strong><br>
+                    <span>Insum – Remote | 2017–2018</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Technical Project Manager</strong><br>
+                    <span>Region of York – Newmarket, Canada | 2016–2017</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Technical Project Manager</strong><br>
+                    <span>Accenture – Oakville, Canada | 2014–2016</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Oracle Applications Engineer</strong><br>
+                    <span>Hatch – Mississauga, Canada | 2011–2014</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Technical Business Analyst</strong><br>
+                    <span>Thomson Reuters – Toronto, Canada | 2010–2011</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Technical Project Manager</strong><br>
+                    <span>Thomson Reuters – New York, USA | 2008–2010</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Senior Oracle Engineer</strong><br>
+                    <span>QBE Insurance – Skopje, Macedonia | 2005–2008</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <strong>Oracle Software Engineer</strong><br>
+                    <span>QBE Insurance – Skopje, Macedonia | 2002–2005</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
 
     <section id="education" class="styled-section">
         <h2 class="section-heading"><i class="fas fa-graduation-cap"></i> Education</h2>
