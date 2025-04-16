@@ -404,14 +404,18 @@
 
     <div class="badge-links">
         <a href="#case-studies" class="badge-link"><i class="fas fa-folder-open"></i> Case Studies</a>
-        <a href="/files/Igor-Pandurski-Software-Development-Manager.pdf" class="badge-link" target="_blank"><i class="fas fa-file-pdf"></i>
-            Download 1-Pager</a>
-        <a href="files/career-journey.pdf" class="badge-link" onclick="openPdfModal(); return false;">
-            <i class="fas fa-route"></i> Career Journey
+      
+        <a href="#" class="badge-link" onclick="openPdfModal('files/Igor-Pandurski-Software-Development-Manager.pdf'); return false;">
+          <i class="fas fa-file-pdf"></i> 1-Pager Overview
         </a>
-
+      
+        <a href="#" class="badge-link" onclick="openPdfModal('files/career-journey.pdf'); return false;">
+          <i class="fas fa-route"></i> Career Journey
+        </a>
+      
         <a href="#timeline" class="badge-link"><i class="fas fa-clock-rotate-left"></i> Visual Timeline</a>
-    </div>
+      </div>
+      
 
 
     <section id="about" class="styled-section">
@@ -631,32 +635,37 @@
     </footer>
 
     <script>
-        function openPdfModal() {
-            document.getElementById('pdfModal').style.display = 'flex';
+        function openPdfModal(pdfPath) {
+          const modal = document.getElementById('pdfModal');
+          const embed = document.getElementById('pdfEmbed');
+          embed.src = pdfPath;
+          modal.style.display = 'flex';
         }
-
+      
         function closePdfModal() {
-            document.getElementById('pdfModal').style.display = 'none';
+          const modal = document.getElementById('pdfModal');
+          const embed = document.getElementById('pdfEmbed');
+          embed.src = ""; // Clear the source when closing
+          modal.style.display = 'none';
         }
-
-        // Close if clicked outside
+      
         window.onclick = function (event) {
-            const modal = document.getElementById('pdfModal');
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
+          const modal = document.getElementById('pdfModal');
+          if (event.target === modal) {
+            closePdfModal();
+          }
         };
-    </script>
+      </script>
+      
 
 
-    <div id="pdfModal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closePdfModal()">&times;</span>
-            <embed src="/files/career-journey.pdf#toolbar=1&navpanes=0&scrollbar=1" type="application/pdf" width="100%"
-                height="100%" />
-
-        </div>
+<div id="pdfModal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closePdfModal()">&times;</span>
+      <embed id="pdfEmbed" src="" type="application/pdf" width="100%" height="100%" />
     </div>
+  </div>
+  
 
 
 </body>
