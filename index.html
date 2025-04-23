@@ -390,6 +390,28 @@
             margin-top: 3rem;
             box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
         }
+
+        .article-links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.article-links li {
+  margin-bottom: 12px;
+}
+
+.article-links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+}
+
+.article-links a:hover {
+  color: var(--accent-color);
+}
+
     </style>
 </head>
 
@@ -623,12 +645,17 @@
     <section id="articles" class="styled-section">
         <h2 class="section-heading"><i class="fas fa-pen-nib"></i> Articles</h2>
         <ul class="article-links">
-          <li><a href="#" onclick="openHtmlModal('articles/leadership-combat.html'); return false;">Software Development Leadership Is a Combat Sport</a></li>
-          <li><a href="#" onclick="openHtmlModal('articles/career-journey.html'); return false;">My Unconventional Career Journey</a></li>
-          <li><a href="#" onclick="openHtmlModal('articles/api-principles.html'); return false;">API Architecture: Clarity Over Complexity</a></li>
-          <!-- Add more as needed -->
+          <li>
+            <a href="https://www.linkedin.com/pulse/software-development-leadership-combat-sport-just-blood-pandurski-p4pjc" 
+               target="_blank" rel="noopener noreferrer">
+              Software Development Leadership Is a Combat Sport
+            </a>
+          </li>
+       
+          <!-- Add more LinkedIn article links below as you publish -->
         </ul>
       </section>
+      
       
 
     <section id="contact" class="styled-section">
