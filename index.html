@@ -390,7 +390,6 @@
             margin-top: 3rem;
             box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.06);
         }
-
         .article-links {
   list-style: none;
   padding-left: 0;
@@ -398,7 +397,24 @@
 }
 
 .article-links li {
+  display: flex;
+  align-items: center;
   margin-bottom: 12px;
+}
+
+.article-links .article-number {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .article-links a {
@@ -411,6 +427,7 @@
 .article-links a:hover {
   color: var(--accent-color);
 }
+
 
     </style>
 </head>
@@ -646,9 +663,10 @@
         <h2 class="section-heading"><i class="fas fa-pen-nib"></i> Articles</h2>
         <ul class="article-links">
           <li>
+            <span class="article-number">1</span>
             <a href="https://www.linkedin.com/pulse/software-development-leadership-combat-sport-just-blood-pandurski-p4pjc" 
                target="_blank" rel="noopener noreferrer">
-              Software Development Leadership Is a Combat Sport
+              Software Development Leadership Is a Combat Sport. Just Without the Blood. Most of the Time 😊
             </a>
           </li>
        
