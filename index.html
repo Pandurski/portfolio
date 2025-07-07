@@ -466,6 +466,22 @@
 
     </div>
 
+    <div style="text-align: center; margin-top: 1rem;">
+    <button onclick="downloadAsPDF()" style="
+        background-color: var(--accent-color);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease;">
+        <i class="fas fa-download" style="margin-right: 6px;"></i> Download as PDF
+    </button>
+</div>
+
+
 
 
     <section id="about" class="styled-section">
@@ -761,6 +777,34 @@
             <embed id="pdfEmbed" src="" type="application/pdf" width="100%" height="100%" />
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+    integrity="sha512-BNa3+ZB9FdJ4N4KpBSrOX38g++yBeRLrxTn4R6oAg4pU4MnqB6vXP3Wa0YRO6VP3N97g+NUqHZIkpq5JkB7yFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+    integrity="sha512-YkN+bjoTKm1ETKiUxnJHbTChm4y3kpOg4Gfi3AgsckPeBIc9dUVDl64eQDEaSVhTwkQKf3tqNZK3iZhVhAV1ug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+    async function downloadAsPDF() {
+        const { jsPDF } = window.jspdf;
+        const element = document.body;
+
+        const canvas = await html2canvas(element, {
+            scale: 2,
+            useCORS: true
+        });
+
+        const imgData = canvas.toDataURL("image/png");
+        const pdf = new jsPDF('p', 'mm', 'a4');
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+        pdf.save("Igor-Pandurski-Resume.pdf");
+    }
+</script>
 
 
 
