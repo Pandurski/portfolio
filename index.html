@@ -434,6 +434,48 @@
             font-size: 0.85rem;
             color: var(--muted-text);
         }
+
+        /* Experience sub-bullets (Oracle roles) */
+        .experience-subbullets {
+            list-style: none;
+            margin: .35rem 0 1rem 1.6rem;
+            /* light indent under the main line */
+            padding: 0;
+        }
+
+        .experience-subbullets li {
+            position: relative;
+            margin: 4px 0;
+            padding-left: 14px;
+            font-size: .95rem;
+            color: var(--muted-text);
+        }
+
+        .experience-subbullets li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent-color);
+            line-height: 1;
+        }
+
+        .experience-subbullets .badge {
+            display: inline-block;
+            margin-left: .45rem;
+            padding: 1px 8px;
+            border-radius: 999px;
+            font-size: .74rem;
+            background: #e6f7fa;
+            /* subtle pill behind the IC level */
+            color: var(--accent-color);
+            vertical-align: middle;
+        }
+
+        .experience-subbullets .date {
+            margin-left: .6rem;
+            font-variant-numeric: tabular-nums;
+        }
     </style>
 </head>
 
@@ -569,25 +611,41 @@
         <ul class="experience-single-line">
             <li><i class="fas fa-circle"></i> <strong>Managing Director&nbsp;</strong> GeahSoft,
                 Burlington, Canada | Jun 2024 - Present</li>
-            <li><i class="fas fa-circle"></i> <strong>Multiple Roles&nbsp;</strong> Oracle, Toronto, Canada | May 2018 - Jun 2024</li>
-             <i>
-                Sr. Principal Engineering Lead (IC5), 2024 </br>
-                Sr. Application Architect (IC5), 2020–2024 </br>
-                Sr. Technical Analyst (IC4), 2018–2020 </br>
-            </i>
+            <li><i class="fas fa-circle"></i> <strong>Multiple Roles&nbsp;</strong> Oracle, Toronto, Canada | May 2018 -
+                Jun 2024</li>
+            <ul class="experience-subbullets">
+                <li>
+                    Sr. Principal Engineering Lead <span class="badge">IC5</span>
+                    <span class="date">2024</span>
+                </li>
+                <li>
+                    Sr. Application Architect <span class="badge">IC5</span>
+                    <span class="date">2020–2024</span>
+                </li>
+                <li>
+                    Sr. Technical Analyst <span class="badge">IC4</span>
+                    <span class="date">2018–2020</span>
+                </li>
+            </ul>
             <li><i class="fas fa-circle"></i> <strong>Sr. Solution Architect&nbsp;</strong> Insum, Mineola, NY, USA |
                 Dec 2017- May 2018</li>
-            <li><i class="fas fa-circle"></i> <strong>Software Development Project Manager&nbsp;</strong> Region of York,
+            <li><i class="fas fa-circle"></i> <strong>Software Development Project Manager&nbsp;</strong> Region of
+                York,
                 Newmarket, Canada | Apr 2016 Dec 2017</li>
-            <li><i class="fas fa-circle"></i> <strong>Software Development Project Manager&nbsp;</strong> Accenture, Oakville, Canada | Mar 2014 - Apr 2016</li>
-            <li><i class="fas fa-circle"></i> <strong>Oracle Applications Administrator&nbsp;</strong> Hatch, Mississauga,
+            <li><i class="fas fa-circle"></i> <strong>Software Development Project Manager&nbsp;</strong> Accenture,
+                Oakville, Canada | Mar 2014 - Apr 2016</li>
+            <li><i class="fas fa-circle"></i> <strong>Oracle Applications Administrator&nbsp;</strong> Hatch,
+                Mississauga,
                 Canada | Nov 2011 - Mar 2014</li>
-            <li><i class="fas fa-circle"></i> <strong>Software Development Business Analyst&nbsp;</strong> Thomson Reuters,
+            <li><i class="fas fa-circle"></i> <strong>Software Development Business Analyst&nbsp;</strong> Thomson
+                Reuters,
                 Toronto, Canada | Jun 2010 - Nov 2011</li>
-            <li><i class="fas fa-circle"></i> <strong>Software Development Project Manager&nbsp;</strong> Thomson Reuters,
+            <li><i class="fas fa-circle"></i> <strong>Software Development Project Manager&nbsp;</strong> Thomson
+                Reuters,
                 New
                 York, USA | Aug 2008 - May 2010</li>
-            <li><i class="fas fa-circle"></i> <strong>Sr. Oracle Software Developer&nbsp;</strong> QBE Insurance, Skopje,
+            <li><i class="fas fa-circle"></i> <strong>Sr. Oracle Software Developer&nbsp;</strong> QBE Insurance,
+                Skopje,
                 Macedonia | Jul 2005 - Aug 2008</li>
             <li><i class="fas fa-circle"></i> <strong>Oracle Software Developer&nbsp;</strong> QBE Insurance, Skopje,
                 Macedonia | Jul 2002 - Jul 2005</li>
