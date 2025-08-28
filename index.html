@@ -476,6 +476,61 @@
             margin-left: .6rem;
             font-variant-numeric: tabular-nums;
         }
+
+        /* Small details button on each experience line */
+        .exp-more {
+            margin-left: 10px;
+            padding: 2px 10px;
+            font-size: .8rem;
+            border: 1px solid var(--accent-color);
+            background: #e6f7fa;
+            color: var(--accent-color);
+            border-radius: 999px;
+            cursor: pointer;
+        }
+
+        .exp-more:hover {
+            background: #d7f2f7;
+        }
+
+        /* hide the per-role bullet lists that feed the modal */
+        .exp-details {
+            display: none;
+        }
+
+        /* Role modal (separate from your PDF modal) */
+        #roleModal.modal-overlay {
+            display: none;
+        }
+
+        #roleModal .modal-content {
+            max-width: 720px;
+        }
+
+        #roleModal h3 {
+            margin: 0 0 .75rem 0;
+            color: var(--primary-color);
+        }
+
+        #rolePoints {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #rolePoints li {
+            position: relative;
+            margin: 6px 0;
+            padding-left: 16px;
+            color: var(--text-color);
+        }
+
+        #rolePoints li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent-color);
+        }
     </style>
 </head>
 
@@ -610,7 +665,13 @@
         <h2 class="section-heading"><i class="fas fa-briefcase"></i> Work Experience</h2>
         <ul class="experience-single-line">
             <li><i class="fas fa-circle"></i> <strong>Managing Director&nbsp;</strong> GeahSoft,
-                Burlington, Canada | Jun 2024 - Present</li>
+                Burlington, Canada | Jun 2024 - Present <button class="exp-more" type="button">Details</button></li>
+            <ul class="exp-details">
+                <li>Led client technology projects focusing on automation and software delivery.</li>
+                <li>Managed scope, timelines, budget, and subcontractors to drive successful outcomes.</li>
+                <li>Team scaling, mentorship, and global team management.</li>
+            </ul>
+
             <li><i class="fas fa-circle"></i> <strong>Multiple Roles&nbsp;</strong> Oracle, Toronto, Canada | May 2018 -
                 Jun 2024</li>
             <ul class="experience-subbullets">
