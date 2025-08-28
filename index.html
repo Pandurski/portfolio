@@ -906,6 +906,51 @@
         </div>
     </div>
 
+    <div id="roleModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" id="roleModalClose">&times;</span>
+            <h3 id="roleTitle"></h3>
+            <ul id="rolePoints"></ul>
+        </div>
+    </div>
+    <script>
+        // Wire up Details buttons to the role modal
+        (function () {
+            const overlay = document.getElementById('roleModal');
+            const titleEl = document.getElementById('roleTitle');
+            const pointsEl = document.getElementById('rolePoints');
+            const closeBtn = document.getElementById('roleModalClose');
+
+            function openRoleModal(fromBtn) {
+                // Title = the containing <li> text without the "Details" word
+                const li = fromBtn.closest('li');
+                const raw = li.innerText.replace(/\s*Details\s*$/, '').trim();
+                titleEl.textContent = raw;
+
+                // Details are in the next sibling <ul class="exp-details">
+                const details = li.nextElementSibling;
+                pointsEl.innerHTML = '';
+                if (details && details.classList.contains('exp-details')) {
+                    details.querySelectorAll('li').forEach(item => {
+                        const liNode = document.createElement('li');
+                        liNode.textContent = item.textContent;
+                        pointsEl.appendChild(liNode);
+                    });
+                }
+                overlay.style.display = 'flex';
+            }
+
+            function closeRoleModal() { overlay.style.display = 'none'; }
+
+            document.querySelectorAll('.exp-more').forEach(btn => {
+                btn.addEventListener('click', () => openRoleModal(btn));
+            });
+            closeBtn.addEventListener('click', closeRoleModal);
+            overlay.addEventListener('click', (e) => { if (e.target === overlay) closeRoleModal(); });
+        })();
+    </script>
+
+
 
 </body>
 
