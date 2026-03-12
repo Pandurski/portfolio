@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+<style>
+  @page { margin: 0; size: letter; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d2d2d;
+    line-height: 1.5;
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    width: 8.5in;
+    height: 11in;
+    overflow: hidden;
+  }
+
+  /* ---- Header ---- */
+  .header {
+    background: #1f2f56;
+    color: #fff;
+    padding: 20px 36px 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .headshot {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid #00bcd4;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .header-text h1 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+  .header-text .title {
+    font-size: 12px;
+    color: #00bcd4;
+    font-weight: 500;
+  }
+  .header-text .contact-row {
+    font-size: 9.5px;
+    color: #b0bec5;
+    margin-top: 4px;
+  }
+  .header-text .contact-row a {
+    color: #b0bec5;
+    text-decoration: none;
+  }
+  .header-text .contact-row i {
+    margin-right: 3px;
+    color: #00bcd4;
+    font-size: 9px;
+  }
+
+  /* ---- Main content ---- */
+  .main {
+    padding: 14px 36px 10px;
+  }
+
+  /* ---- Section heading ---- */
+  .section-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1f2f56;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 3px;
+    margin: 14px 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .section-title:first-child { margin-top: 0; }
+  .section-title i { color: #00bcd4; font-size: 11px; }
+
+  /* ---- Overview ---- */
+  .overview {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #2d2d2d;
+  }
+
+  /* ---- Accent box ---- */
+  .accent-box {
+    background: #e6f7fa;
+    border-left: 3px solid #00bcd4;
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    margin: 10px 0;
+    font-size: 10px;
+    line-height: 1.55;
+    color: #1f2f56;
+  }
+  .accent-box strong { font-size: 10.5px; }
+
+  /* ---- 3 Column Capabilities ---- */
+  .capabilities {
+    display: flex;
+    gap: 14px;
+    margin: 8px 0 4px;
+  }
+  .cap-col {
+    flex: 1;
+    background: #f7f9fb;
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .cap-col h3 {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #1f2f56;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .cap-col h3 i { color: #00bcd4; font-size: 10px; }
+  .cap-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  .cap-col li {
+    font-size: 9.5px;
+    line-height: 1.5;
+    color: #2d2d2d;
+    padding: 1.5px 0;
+    padding-left: 10px;
+    position: relative;
+  }
+  .cap-col li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #00bcd4;
+  }
+
+  /* ---- Career Highlights ---- */
+  .highlights {
+    margin: 6px 0 4px;
+  }
+  .highlight-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .highlight-item .hl-marker {
+    width: 6px;
+    height: 6px;
+    background: #00bcd4;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  .highlight-item strong {
+    color: #1f2f56;
+  }
+
+  /* ---- Skills Tags ---- */
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 6px 0;
+  }
+  .skill-tag {
+    background: #e6f7fa;
+    color: #1f2f56;
+    font-size: 9px;
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-weight: 500;
+  }
+
+  /* ---- Education compact ---- */
+  .edu-row {
+    font-size: 9.5px;
+    color: #2d2d2d;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .edu-row i { color: #00bcd4; font-size: 9px; }
+  .edu-row .edu-date {
+    color: #6b7280;
+    margin-left: auto;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  /* ---- Footer ---- */
+  .footer {
+    text-align: center;
+    font-size: 8.5px;
+    color: #6b7280;
+    padding: 6px 36px;
+    border-top: 1px solid #e0e0e0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<div class="header">
+  <img src="{{PHOTO_DATA_URI}}" alt="Igor Pandurski" class="headshot" />
+  <div class="header-text">
+    <h1>Igor Pandurski</h1>
+    <div class="title">Director of AI and Software Engineering</div>
+    <div class="contact-row">
+      <i class="fas fa-envelope"></i> igor@pandurski.com &nbsp;&middot;&nbsp;
+      <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/pandurski">linkedin.com/in/pandurski</a> &nbsp;&middot;&nbsp;
+      <i class="fas fa-globe"></i> <a href="https://pandurski.com">pandurski.com</a> &nbsp;&middot;&nbsp;
+      <i class="fas fa-map-marker-alt"></i> Burlington, Canada
+    </div>
+  </div>
+</div>
+
+<!-- ========== MAIN ========== -->
+<div class="main">
+
+  <!-- Professional Overview -->
+  <div class="section-title"><i class="fas fa-user-tie"></i> Professional Overview</div>
+  <p class="overview">
+    Technology leader with 20+ years building enterprise software across four continents. Proven track record leading teams of dozens, delivering products showcased on global stages, and managing critical integrations under extreme pressure. Founded Geahsoft in 2024&mdash;an AI consulting and custom software development practice&mdash;after a senior career at Oracle, Thomson Reuters, Accenture, and other major organizations.
+  </p>
+
+  <!-- Long Story Short -->
+  <div class="accent-box">
+    <strong><i class="fas fa-lightbulb" style="margin-right:4px;"></i> Long Story Short:</strong>
+    Consulting work revealed problems deep enough to build products around. <strong>Applicora</strong> is a career and talent AI platform redefining hiring. <strong>Agentino</strong> brings intelligent automated communication to the trades industry. Both solve real gaps in their markets.
+  </div>
+
+  <!-- Capabilities -->
+  <div class="section-title"><i class="fas fa-th-large"></i> Core Capabilities</div>
+  <div class="capabilities">
+    <div class="cap-col">
+      <h3><i class="fas fa-users-cog"></i> Leadership</h3>
+      <ul>
+        <li>Team scaling &amp; mentorship</li>
+        <li>Global team management</li>
+        <li>Agile / Scrum delivery</li>
+        <li>Program management</li>
+        <li>Stakeholder alignment</li>
+        <li>Budget &amp; resource planning</li>
+      </ul>
+    </div>
+    <div class="cap-col">
+      <h3><i class="fas fa-code"></i> Architecture</h3>
+      <ul>
+        <li>Cloud-native solutions (OCI, AWS)</li>
+        <li>Microservices &amp; monolithic</li>
+        <li>REST API design</li>
+        <li>CI/CD pipelines</li>
+        <li>System design &amp; ER modeling</li>
+        <li>Docker, Kubernetes, Helm</li>
+      </ul>
+    </div>
+    <div class="cap-col">
+      <h3><i class="fas fa-brain"></i> AI &amp; Data</h3>
+      <ul>
+        <li>LLMs (OpenAI, Claude, Gemini)</li>
+        <li>Vector search &amp; embeddings</li>
+        <li>ETL &amp; data warehousing</li>
+        <li>Python, FastAPI, pandas</li>
+        <li>Oracle, PostgreSQL, MongoDB</li>
+        <li>Snowflake, Databricks, Tableau</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Career Highlights -->
+  <div class="section-title"><i class="fas fa-briefcase"></i> Career Highlights</div>
+  <div class="highlights">
+    <div class="highlight-item">
+      <div class="hl-marker"></div>
+      <div><strong>Geahsoft</strong> &mdash; Founded AI consulting &amp; software practice. Built Applicora (career AI) and Agentino (trades automation). <span style="color:#6b7280;">2024&ndash;Present</span></div>
+    </div>
+    <div class="highlight-item">
+      <div class="hl-marker"></div>
+      <div><strong>Oracle</strong> &mdash; Sr. Principal Engineer (IC5). Cloud-native solutions showcased at CloudWorld. Platform modernization. <span style="color:#6b7280;">2018&ndash;2024</span></div>
+    </div>
+    <div class="highlight-item">
+      <div class="hl-marker"></div>
+      <div><strong>Region of York</strong> &mdash; Software Development PM. Municipal government projects, compliance &amp; delivery. <span style="color:#6b7280;">2016&ndash;2018</span></div>
+    </div>
+    <div class="highlight-item">
+      <div class="hl-marker"></div>
+      <div><strong>Accenture</strong> &mdash; Software Development PM. Enterprise integration for global clients, post-acquisition programs. <span style="color:#6b7280;">2014&ndash;2016</span></div>
+    </div>
+    <div class="highlight-item">
+      <div class="hl-marker"></div>
+      <div><strong>Thomson Reuters</strong> &mdash; PM &amp; BA across US &amp; Canada. Led integrations during the 2008 financial crisis. <span style="color:#6b7280;">2008&ndash;2011</span></div>
+    </div>
+    <div class="highlight-item">
+      <div class="hl-marker"></div>
+      <div><strong>QBE Insurance</strong> &mdash; Sr. Oracle Developer. Core insurance systems in Oracle Forms/PL/SQL. <span style="color:#6b7280;">2002&ndash;2008</span></div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="section-title"><i class="fas fa-tools"></i> Skills</div>
+  <div class="skills-tags">
+    <span class="skill-tag">Python</span>
+    <span class="skill-tag">JavaScript</span>
+    <span class="skill-tag">SQL</span>
+    <span class="skill-tag">PL/SQL</span>
+    <span class="skill-tag">FastAPI</span>
+    <span class="skill-tag">REST APIs</span>
+    <span class="skill-tag">Oracle Cloud</span>
+    <span class="skill-tag">AWS</span>
+    <span class="skill-tag">Docker</span>
+    <span class="skill-tag">Kubernetes</span>
+    <span class="skill-tag">CI/CD</span>
+    <span class="skill-tag">Agile</span>
+    <span class="skill-tag">Scrum</span>
+    <span class="skill-tag">LLMs</span>
+    <span class="skill-tag">Vector Search</span>
+    <span class="skill-tag">ETL</span>
+    <span class="skill-tag">Data Warehousing</span>
+    <span class="skill-tag">PostgreSQL</span>
+    <span class="skill-tag">MongoDB</span>
+    <span class="skill-tag">Snowflake</span>
+    <span class="skill-tag">n8n</span>
+  </div>
+
+  <!-- Education -->
+  <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+  <div class="edu-row"><i class="fas fa-university"></i> <strong>MBA</strong> &mdash; Edinburgh Business School, Heriot-Watt University <span class="edu-date">2021&ndash;2025</span></div>
+  <div class="edu-row"><i class="fas fa-university"></i> <strong>Certificate</strong> &mdash; Project Planning, Analysis &amp; Control &ndash; George Washington University <span class="edu-date">2012</span></div>
+  <div class="edu-row"><i class="fas fa-university"></i> <strong>M.Sc. (coursework)</strong> &mdash; Computer Software Engineering &ndash; Ss. Cyril and Methodius <span class="edu-date">2002&ndash;2006</span></div>
+  <div class="edu-row"><i class="fas fa-university"></i> <strong>B.Sc.</strong> &mdash; Engineering &ndash; Military Academy, Skopje <span class="edu-date">1996&ndash;2000</span></div>
+
+</div>
+
+<!-- ========== FOOTER ========== -->
+<div class="footer">
+  Built on Discipline, Driven by Impact &nbsp;&middot;&nbsp; igor@pandurski.com &nbsp;&middot;&nbsp; linkedin.com/in/pandurski &nbsp;&middot;&nbsp; pandurski.com
+</div>
+
+</body>
+</html>

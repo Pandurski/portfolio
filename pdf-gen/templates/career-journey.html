@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+<style>
+  @page { margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2d2d2d;
+    line-height: 1.6;
+    background: #f7f9fb;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ---- Header Banner ---- */
+  .header {
+    background: #1f2f56;
+    color: #fff;
+    padding: 48px 60px 36px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .header .subtitle {
+    font-size: 14px;
+    color: #00bcd4;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  /* ---- Content Container ---- */
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 36px 60px 40px;
+  }
+
+  /* ---- Narrative paragraphs ---- */
+  .narrative {
+    font-size: 11.5px;
+    line-height: 1.7;
+    color: #2d2d2d;
+    margin-bottom: 14px;
+  }
+  .narrative.lead {
+    font-size: 12.5px;
+    color: #1f2f56;
+    font-weight: 500;
+  }
+
+  /* ---- Section heading ---- */
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f2f56;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 4px;
+    margin: 28px 0 18px;
+  }
+
+  /* ---- Visual Timeline ---- */
+  .timeline {
+    position: relative;
+    padding-left: 32px;
+    margin: 20px 0 28px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #00bcd4;
+  }
+  .milestone {
+    position: relative;
+    margin-bottom: 22px;
+    page-break-inside: avoid;
+  }
+  .milestone:last-child { margin-bottom: 0; }
+  .milestone-icon {
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: #00bcd4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .milestone-icon i {
+    font-size: 9px;
+    color: #fff;
+  }
+  .milestone h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1f2f56;
+    margin-bottom: 2px;
+  }
+  .milestone .period {
+    font-size: 10.5px;
+    color: #6b7280;
+    margin-bottom: 4px;
+  }
+  .milestone p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #2d2d2d;
+  }
+
+  /* ---- Closing section ---- */
+  .closing {
+    margin-top: 10px;
+  }
+
+  /* ---- Accent box ---- */
+  .accent-box {
+    background: #e6f7fa;
+    border-left: 3px solid #00bcd4;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 18px 0;
+    font-size: 11.5px;
+    line-height: 1.65;
+    color: #1f2f56;
+  }
+
+  /* ---- Footer ---- */
+  .footer {
+    text-align: center;
+    font-size: 10px;
+    color: #6b7280;
+    padding: 20px 60px 24px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 20px;
+  }
+  .footer a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<div class="header">
+  <h1><i class="fas fa-route" style="margin-right:10px; font-size:24px;"></i>Career Journey</h1>
+  <div class="subtitle">Igor Pandurski &mdash; Director of AI and Software Engineering</div>
+</div>
+
+<!-- ========== CONTENT ========== -->
+<div class="content">
+
+  <p class="narrative lead">
+    I've spent over twenty years building enterprise software across four continents. I've led teams of dozens, built products that were showcased on the biggest stages, and managed critical integrations during a financial crisis while clients were collapsing around us.
+  </p>
+
+  <p class="narrative">
+    My path has never been conventional. I started as a military engineering officer, moved into software development, then into project management for global organizations, and eventually into senior technical architecture roles at Oracle. Along the way I earned certifications, pursued graduate studies, and kept building&mdash;always building.
+  </p>
+
+  <!-- ========== TIMELINE ========== -->
+  <div class="section-title"><i class="fas fa-timeline" style="margin-right:8px; color:#00bcd4;"></i>Key Milestones</div>
+
+  <div class="timeline">
+
+    <div class="milestone">
+      <div class="milestone-icon"><i class="fas fa-shield-halved"></i></div>
+      <h3>Military Engineering Officer</h3>
+      <div class="period">2000 &ndash; 2002 &middot; Skopje, North Macedonia</div>
+      <p>Led an engineering platoon in the Ministry of Defence. Planned training, field operations, and logistics. This is where discipline and leadership became second nature&mdash;lessons that still define how I lead today.</p>
+    </div>
+
+    <div class="milestone">
+      <div class="milestone-icon"><i class="fas fa-code"></i></div>
+      <h3>Software Developer &rarr; Senior Developer</h3>
+      <div class="period">2002 &ndash; 2008 &middot; QBE Insurance, Skopje</div>
+      <p>Built core insurance systems in Oracle Forms and PL/SQL. Promoted to Senior Developer for delivering critical system projects. Meanwhile completed graduate coursework in Computer Science with a 4.0 GPA.</p>
+    </div>
+
+    <div class="milestone">
+      <div class="milestone-icon"><i class="fas fa-globe"></i></div>
+      <h3>Project Manager &rarr; Business Analyst</h3>
+      <div class="period">2008 &ndash; 2016 &middot; Thomson Reuters (US &amp; Canada), Hatch, Accenture</div>
+      <p>Moved to the United States and led distributed project teams at Thomson Reuters during the 2008 financial crisis&mdash;directing major integration programs while client banks were failing. Then continued through enterprise roles at Hatch and Accenture, managing complex integrations for global clients including post-acquisition programs.</p>
+    </div>
+
+    <div class="milestone">
+      <div class="milestone-icon"><i class="fas fa-building"></i></div>
+      <h3>Senior Technical Analyst &rarr; Sr. Principal Engineer</h3>
+      <div class="period">2018 &ndash; 2024 &middot; Oracle, Toronto</div>
+      <p>Six years at Oracle across three progressively senior roles (IC4 to IC5). Designed cloud-native solutions showcased at Oracle CloudWorld. Contributed to enterprise-scale products and platform modernization initiatives. Mentored engineers and drove cross-team collaboration.</p>
+    </div>
+
+    <div class="milestone">
+      <div class="milestone-icon"><i class="fas fa-rocket"></i></div>
+      <h3>Founder &amp; Director of AI and SWE</h3>
+      <div class="period">2024 &ndash; Present &middot; Geahsoft, Burlington, Canada</div>
+      <p>Left a senior role at Oracle to finish my MBA and start Geahsoft&mdash;an AI consulting and custom software development practice. Consulting work revealed problems deep enough to build products around, leading to the creation of Applicora and Agentino.</p>
+    </div>
+
+  </div>
+
+  <!-- ========== PRODUCTS ========== -->
+  <div class="accent-box">
+    <strong><i class="fas fa-lightbulb" style="margin-right:6px;"></i>What Emerged</strong><br>
+    <strong>Applicora</strong> is a career and talent AI platform redefining how job seekers and employers find each other in a market that is broken on both sides.<br>
+    <strong>Agentino</strong> brings intelligent, automated post-job communication to the trades industry&mdash;a sector underserved by technology for too long and ready for it.
+  </p>
+  </div>
+
+  <!-- ========== CLOSING ========== -->
+  <div class="closing">
+    <div class="section-title"><i class="fas fa-compass" style="margin-right:8px; color:#00bcd4;"></i>Looking Ahead</div>
+
+    <p class="narrative">
+      Every role taught me something. The military taught me discipline and accountability. Development taught me to think in systems. Project management taught me to deliver under pressure. Architecture taught me to see the bigger picture. And building my own company taught me that real problems are the only ones worth solving.
+    </p>
+
+    <p class="narrative">
+      I build software that works, lead teams that deliver, and focus on problems that matter. If something here resonates, let's talk.
+    </p>
+  </div>
+
+</div>
+
+<!-- ========== FOOTER ========== -->
+<div class="footer">
+  <i class="fas fa-envelope" style="margin-right:4px;"></i> igor@pandurski.com &nbsp;&middot;&nbsp;
+  <a href="https://linkedin.com/in/pandurski"><i class="fab fa-linkedin" style="margin-right:4px;"></i>linkedin.com/in/pandurski</a> &nbsp;&middot;&nbsp;
+  <a href="https://pandurski.com"><i class="fas fa-globe" style="margin-right:4px;"></i>pandurski.com</a>
+</div>
+
+</body>
+</html>

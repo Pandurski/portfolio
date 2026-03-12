@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-pdf-gen",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "generate": "node generate-pdfs.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}
