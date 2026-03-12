@@ -8,7 +8,7 @@
 ## HEADLINE
 
 ```
-Geahsoft | AI Consulting & Custom Software | Founder, Applicora & Agentino | Ex-Oracle IC5 | Open to advisory & strategic partnerships
+Geahsoft | AI Consulting & Custom Software | Founder, Applicora | Building Agentino | Ex-Oracle IC5 | Open to advisory & strategic partnerships
 ```
 
 **Why this works:** Leads with Geahsoft as the practice, then names the products underneath it. "Ex-Oracle IC5" gives instant credibility and level. "Open to advisory & strategic partnerships" tells recruiters you're reachable without saying "looking for work."
