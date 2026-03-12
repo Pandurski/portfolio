@@ -7,7 +7,7 @@
 ## HEADLINE
 
 ```
-Geahsoft | AI Solutions & Custom Software | Founder, Applicora | Ex-Oracle IC5 | Open to advisory & strategic partnerships
+Geahsoft | AI Solutions & Custom Software | Founder, Applicora | Ex-Oracle IC5 | Open to fractional, advisory & strategic partnerships
 ```
 
 ---
