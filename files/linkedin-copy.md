@@ -1,17 +1,14 @@
 # LinkedIn Profile Copy – Ready to Paste
 
 > Updated: March 2026
-> Current state: Most experience roles have NO descriptions. About section and Agentino description are outdated.
 
 ---
 
 ## HEADLINE
 
 ```
-Geahsoft | AI Consulting & Custom Software | Founder, Applicora | Building Agentino | Ex-Oracle IC5 | Open to advisory & strategic partnerships
+Geahsoft | AI Solutions & Custom Software | Founder, Applicora | Ex-Oracle IC5 | Open to advisory & strategic partnerships
 ```
-
-**Why this works:** Leads with Geahsoft as the practice, then names the products underneath it. "Ex-Oracle IC5" gives instant credibility and level. "Open to advisory & strategic partnerships" tells recruiters you're reachable without saying "looking for work."
 
 ---
 
@@ -20,11 +17,11 @@ Geahsoft | AI Consulting & Custom Software | Founder, Applicora | Building Agent
 ```
 20+ years building enterprise software across four continents. Led teams of up to 15 engineers, managed multi-million-dollar programs, and built products showcased on the biggest stages. Directed 8+ concurrent integration programs during a financial crisis while client institutions were collapsing around us.
 
-In 2024, I left a senior role at Oracle (three promotions in six years, IC4 to IC5) to complete my MBA and start Geahsoft – an AI consulting and custom software development practice. I've built for enterprises and I've built for myself. The best work happens when you've done both.
+In 2024, I left a senior role at Oracle (three promotions in six years, IC4 to IC5) to complete my MBA and start Geahsoft – an AI-first consulting and software development practice. I've built for enterprises and I've built for myself. The best work happens when you've done both.
 
-That consulting work revealed problems deep enough to build on. Two products came out of it:
+That work revealed problems deep enough to build on. Two AI products came out of it:
 
-Applicora – a career and talent AI platform redefining how job seekers and employers find each other in a market that's broken on both sides. (applicora.com)
+Applicora – a career and talent AI platform with a proprietary 14-dimension matching algorithm, redefining how job seekers and employers find each other in a market that's broken on both sides. (applicora.com)
 
 Agentino – an AI-powered automation platform for service businesses that turns every completed job into repeat revenue through intelligent follow-ups, reviews, referrals, and rebookings. (agentino.app)
 
@@ -33,13 +30,9 @@ Currently building. Open to advisory roles, fractional leadership, and strategic
 If something here resonates, let's talk: igor@pandurski.com | pandurski.com
 ```
 
-**What changed from current:** Added hard numbers (15 engineers, multi-million-dollar, 8+ programs, three promotions). Added the bridge line. Updated Agentino description. Added availability signal. Added portfolio link.
-
 ---
 
 ## EXPERIENCE DESCRIPTIONS
-
-Paste each block into the corresponding LinkedIn role's description field.
 
 ---
 
@@ -60,11 +53,11 @@ applicora.com
 ### Director of AI & SWE | Geahsoft (Jun 2024 – Present)
 
 ```
-Founded an AI consulting and custom software development practice after a senior career at Oracle.
+Founded an AI-first consulting and software development practice after a senior career at Oracle. Advising businesses on AI strategy, building custom AI solutions, and developing proprietary AI products.
 
-Consulting work revealed problems deep enough to build products around:
-- Applicora: career and talent AI platform (applicora.com)
-- Agentino: AI-powered automation for service businesses (agentino.app)
+What emerged from consulting:
+- Applicora: AI-powered career and talent platform with proprietary matching (applicora.com)
+- Agentino: AI automation platform turning completed jobs into repeat revenue (agentino.app)
 
 MBA completed at Edinburgh Business School (Heriot-Watt University).
 
@@ -82,30 +75,33 @@ Six years, three promotions (IC4 to IC5). Led a team of 15 engineers across plat
 #### Sr. Principal Engineer / Consulting Member of Technical Staff (IC5), Oracle Health (Jan 2024 – Jun 2024)
 
 ```
-Led engineering initiatives for Oracle Health's cloud platform.
+Senior-most engineering role. Led architecture and engineering initiatives for Oracle Health's cloud platform.
 
-- Contributed to enterprise-scale products and platform modernization
-- Mentored engineers and drove cross-team delivery
-- Final and most senior role before leaving to build Geahsoft
+- Owned technical direction for enterprise-scale health technology products
+- Drove platform modernization strategy across distributed teams
+- Mentored senior engineers and established engineering standards
+- Left this role to found Geahsoft
 ```
 
 #### Sr. Application Architect (IC5), Global Revenue Operations (Dec 2020 – Dec 2023)
 
 ```
-Designed and delivered cloud-native solutions showcased at Oracle CloudWorld to thousands of enterprise customers.
+Led a team of 15 engineers. Designed and delivered cloud-native solutions showcased at Oracle CloudWorld to thousands of enterprise customers.
 
-- Drove architecture decisions across the global revenue platform
+- Owned architecture decisions across Oracle's global revenue platform
+- Drove modernization from legacy systems to cloud-native architecture
 - Three years of progressive technical leadership at IC5 level
-- Led a team of 15 engineers across modernization initiatives
+- Established cross-team engineering practices adopted organization-wide
 ```
 
 #### Sr. Software Analyst (IC4), North American Applications (May 2018 – Dec 2020)
 
 ```
-First role at Oracle. Contributed to North American enterprise applications.
+First role at Oracle. Rapidly promoted to IC5 within two years.
 
-- Promoted to IC5 within two years based on delivery and cross-functional impact
-- Built foundation for subsequent architecture and engineering leadership roles
+- Delivered high-impact contributions to North American enterprise applications
+- Drove cross-functional collaboration across product and engineering teams
+- Built the technical foundation for subsequent architecture leadership roles
 ```
 
 ---
@@ -113,10 +109,11 @@ First role at Oracle. Contributed to North American enterprise applications.
 ### Sr. Solutions Architect | Talan – Oracle Technologies, formerly Insum (Dec 2017 – May 2018)
 
 ```
-Delivered Oracle APEX solutions for enterprise clients at a specialized Oracle technology consultancy.
+Senior architecture role at a specialized Oracle technology consultancy.
 
-- Bridged consulting and architecture, translating business requirements into technical solutions
-- Contributed to pre-sales and client engagement efforts
+- Designed and delivered enterprise solutions for Fortune 500 clients
+- Led technical discovery, solution design, and client-facing architecture reviews
+- Bridged business strategy and technical execution
 ```
 
 ---
@@ -124,10 +121,11 @@ Delivered Oracle APEX solutions for enterprise clients at a specialized Oracle t
 ### Software Project Manager | York Region (Apr 2016 – Dec 2017)
 
 ```
-Directed software projects for municipal government, ensuring compliance and timely delivery.
+Led enterprise software delivery for one of Ontario's largest municipal governments.
 
-- Coordinated cross-functional teams and external stakeholders to achieve program goals
-- Delivered critical enterprise applications on time and within budget
+- Directed cross-functional teams across IT, operations, and external vendors
+- Delivered critical applications on time and within budget under government compliance standards
+- Managed stakeholder alignment across elected officials, department heads, and technical teams
 ```
 
 ---
@@ -137,10 +135,11 @@ Directed software projects for municipal government, ensuring compliance and tim
 ```
 Callisto Integration, acquired by Accenture.
 
-Directed multi-million-dollar enterprise integration projects for global clients, including post-acquisition programs.
+Directed multi-million-dollar enterprise integration programs for global clients, including complex post-acquisition system consolidations.
 
-- Managed technical and business teams across geographies
-- Oversaw budgets, schedules, and client expectations for large-scale implementations
+- Managed technical and business teams across multiple geographies
+- Owned end-to-end delivery: budgets, schedules, risk, and client expectations
+- Operated in high-stakes environments with executive-level visibility
 ```
 
 ---
@@ -148,10 +147,11 @@ Directed multi-million-dollar enterprise integration projects for global clients
 ### Software Engineer, Oracle Apps | Hatch (Nov 2011 – Mar 2014)
 
 ```
-Developed and enhanced Oracle applications supporting global engineering operations.
+Engineering role at a global engineering and project management firm.
 
-- Partnered with business and IT teams to deliver system improvements and integrations
-- Provided technical leadership on Oracle EBS customization and reporting
+- Built and enhanced Oracle applications supporting operations across 60+ countries
+- Partnered with business and IT leadership to deliver system improvements and integrations
+- Provided technical leadership on enterprise Oracle EBS customization and reporting
 ```
 
 ---
@@ -159,10 +159,11 @@ Developed and enhanced Oracle applications supporting global engineering operati
 ### Technical Analyst | Thomson Reuters (May 2010 – Nov 2011)
 
 ```
-Relocated from the U.S. to Canada.
+Relocated from the U.S. to Canada to take on a technical leadership role.
 
-- Bridged technology and business teams to drive software delivery and platform analysis
-- Contributed to technical documentation and stakeholder alignment across global teams
+- Drove software delivery and platform analysis across global business units
+- Bridged technology and business teams on strategic platform decisions
+- Contributed to enterprise-wide technical standards and documentation
 ```
 
 ---
@@ -170,12 +171,13 @@ Relocated from the U.S. to Canada.
 ### Software Project Manager | Seavus (Aug 2008 – May 2010)
 
 ```
-Client: Thomson Reuters.
+Client: Thomson Reuters. New York, NY.
 
-Directed 8+ concurrent integration programs during the 2008 financial crisis while client institutions were failing.
+Directed 8+ concurrent integration programs during the 2008 financial crisis while client institutions were failing around us.
 
 - Led distributed project teams across U.S. and international offices
-- Bridged technology, stakeholders, and global delivery teams to align with business objectives
+- Delivered critical integrations under extreme pressure and collapsing timelines
+- Bridged technology, stakeholders, and global delivery teams at enterprise scale
 ```
 
 ---
@@ -183,16 +185,17 @@ Directed 8+ concurrent integration programs during the 2008 financial crisis whi
 ### QBE Insurance – Company-Level Description (Jul 2002 – Aug 2008)
 
 ```
-Six years building core insurance systems in Oracle Forms and PL/SQL. Promoted to Senior Software Engineer for leadership in critical system delivery.
+Six years building core insurance systems. Promoted to Senior Software Engineer for leadership in critical system delivery. Partnered with business units to streamline underwriting and claims processes across the organization.
 ```
 
 #### Sr. Software Engineer (Jun 2006 – Aug 2008)
 
 ```
-Led development of critical insurance system modules.
+Promoted to senior role for consistent delivery and technical leadership.
 
-- Promoted for consistent delivery and technical leadership across the engineering team
-- Partnered with business units to streamline underwriting and claims processes
+- Led development of mission-critical insurance system modules
+- Drove engineering standards and mentored junior developers
+- Partnered with underwriting and claims leadership on system strategy
 ```
 
 #### Software Engineer (Jul 2002 – May 2006)
@@ -200,7 +203,7 @@ Led development of critical insurance system modules.
 ```
 Built and maintained core insurance applications in Oracle Forms/PL/SQL.
 
-- Collaborated with business units on underwriting and claims system improvements
+- Delivered system improvements across underwriting, claims, and policy management
 - Completed graduate coursework in Computer Science (4.0 GPA) in parallel
 ```
 
@@ -208,14 +211,15 @@ Built and maintained core insurance applications in Oracle Forms/PL/SQL.
 
 ### Engineering Officer (Lt.), Platoon Commander | Ministry of Defence (Jun 2000 – Jun 2002)
 
-**Note:** This role is NOT currently on your LinkedIn. Consider adding it – it's a differentiator.
+**Note:** This role is NOT currently on your LinkedIn. Consider adding it – it's a differentiator that no other candidate has.
 
 ```
-Led an engineering platoon in the Ministry of Defence.
+Commissioned officer. Led an engineering platoon of 30+ soldiers.
 
-- Planned training schedules, field operations, and logistics to meet readiness goals
-- Managed equipment maintenance and safety compliance
-- Coordinated with senior staff and partner units to deliver infrastructure tasks on deadline
+- Full operational responsibility: training, field operations, logistics, equipment, and readiness
+- Managed safety compliance and incident-response protocols
+- Coordinated with senior command and partner units on infrastructure and operations
+- Where discipline and leadership became second nature
 ```
 
 ---
