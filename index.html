@@ -10,6 +10,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Igor Pandurski – Portfolio</title>
+    <meta name="description" content="Igor Pandurski, MBA, PMP, OCP – Technology leader with 20+ years building enterprise software across four continents. AI consulting and custom software development.">
+    <meta property="og:title" content="Igor Pandurski – Portfolio">
+    <meta property="og:description" content="Technology Leader | AI Consulting | Custom Software Development | 20+ years across four continents">
+    <meta property="og:image" content="https://pandurski.com/img/igor.png">
+    <meta property="og:url" content="https://pandurski.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
     <style>
         :root {
             --primary-color: #1f2f56;
@@ -634,10 +641,208 @@
                 font-size: 1.02rem;
             }
         }
+        /* ===== Sticky Nav ===== */
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 900;
+            background: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 10px 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.12);
+            flex-wrap: wrap;
+        }
+        .site-nav a {
+            color: rgba(255,255,255,.85);
+            text-decoration: none;
+            font-size: .85rem;
+            font-weight: 500;
+            padding: 4px 10px;
+            border-radius: 6px;
+            transition: background .2s, color .2s;
+        }
+        .site-nav a:hover, .site-nav a:focus {
+            background: rgba(255,255,255,.12);
+            color: #fff;
+        }
+        .nav-toggle-dark {
+            background: none;
+            border: 1px solid rgba(255,255,255,.3);
+            color: rgba(255,255,255,.85);
+            font-size: .9rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-left: 8px;
+            transition: background .2s, color .2s;
+        }
+        .nav-toggle-dark:hover {
+            background: rgba(255,255,255,.15);
+            color: #fff;
+        }
+
+        /* ===== Dark Mode ===== */
+        [data-theme="dark"] {
+            --primary-color: #c9d6e8;
+            --accent-color: #4dd0e1;
+            --bg-color: #121a2e;
+            --card-bg: #1a2540;
+            --text-color: #d4d9e3;
+            --muted-text: #8895a7;
+        }
+        [data-theme="dark"] .site-nav {
+            background: #0e1525;
+        }
+        [data-theme="dark"] footer {
+            background: #0e1525;
+        }
+        [data-theme="dark"] .badge-link {
+            background-color: var(--accent-color);
+            color: #121a2e;
+        }
+        [data-theme="dark"] .skill-tag {
+            background: rgba(77,208,225,.15);
+            color: var(--accent-color);
+        }
+        [data-theme="dark"] .cap-col {
+            background: var(--card-bg);
+        }
+        [data-theme="dark"] .modal-content {
+            background: var(--card-bg);
+            color: var(--text-color);
+        }
+        [data-theme="dark"] .exp-more {
+            background: rgba(77,208,225,.1);
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        [data-theme="dark"] .experience-subbullets .badge {
+            background: rgba(77,208,225,.12);
+            color: var(--accent-color);
+        }
+
+        /* ===== Products Section ===== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.2rem;
+            margin-top: 1.2rem;
+        }
+        .product-card {
+            background: var(--bg-color);
+            border-radius: var(--radius);
+            padding: 1.4rem;
+            border: 1px solid rgba(0,188,212,.15);
+            transition: transform .2s, box-shadow .2s;
+        }
+        .product-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,.08);
+        }
+        .product-card h3 {
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            margin-bottom: .3rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .product-card h3 i { color: var(--accent-color); }
+        .product-card .product-tagline {
+            font-size: .9rem;
+            color: var(--muted-text);
+            margin-bottom: .6rem;
+            font-style: italic;
+        }
+        .product-card p {
+            font-size: .95rem;
+            line-height: 1.6;
+            margin-bottom: .8rem;
+        }
+        .product-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: .9rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color .2s;
+        }
+        .product-link:hover { color: #0097a7; }
+
+        /* ===== Articles Section ===== */
+        .article-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .article-card {
+            background: var(--bg-color);
+            border-radius: var(--radius);
+            padding: 1.1rem 1.2rem;
+            border-left: 3px solid var(--accent-color);
+            transition: transform .2s;
+        }
+        .article-card:hover { transform: translateY(-2px); }
+        .article-card .article-source {
+            font-size: .75rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            margin-bottom: .35rem;
+        }
+        .article-card a {
+            font-size: .95rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+            line-height: 1.4;
+            display: block;
+            transition: color .2s;
+        }
+        .article-card a:hover { color: var(--accent-color); }
+
+        /* ===== Mobile PDF fallback ===== */
+        .pdf-download-link {
+            display: none;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .pdf-download-link a {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            .modal-content embed {
+                display: none;
+            }
+            .pdf-download-link {
+                display: block;
+            }
+        }
     </style>
 </head>
 
 <body>
+
+    <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+        <button class="nav-toggle-dark" id="darkToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    </nav>
 
     <div class="top-intro">
         <img src="img/igor.png" alt="Igor Pandurski" />
@@ -697,7 +902,29 @@
         </p>
     </section>
 
-
+    <section id="products" class="styled-section">
+        <h2 class="section-heading"><i class="fas fa-rocket"></i> Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <h3><i class="fas fa-users"></i> Applicora</h3>
+                <div class="product-tagline">Career &amp; Talent AI Platform</div>
+                <p>Redefining how job seekers and employers find each other in a market that is broken on both sides. AI-powered matching, resume analysis, and employer tools.</p>
+                <a href="https://applicora.com" target="_blank" class="product-link"><i class="fas fa-external-link-alt"></i> applicora.com</a>
+            </div>
+            <div class="product-card">
+                <h3><i class="fas fa-bolt"></i> Agentino</h3>
+                <div class="product-tagline">Intelligent Post-Job Communication for Trades</div>
+                <p>Bringing automated, intelligent communication to the trades industry &mdash; a sector underserved by technology for too long and ready for it.</p>
+                <a href="https://agentino.app" target="_blank" class="product-link"><i class="fas fa-external-link-alt"></i> agentino.app</a>
+            </div>
+            <div class="product-card">
+                <h3><i class="fas fa-building"></i> Geahsoft</h3>
+                <div class="product-tagline">AI Consulting &amp; Custom Software Development</div>
+                <p>An AI consulting and custom software development practice. Where the consulting work that led to Applicora and Agentino started.</p>
+                <a href="https://geahsoft.com" target="_blank" class="product-link"><i class="fas fa-external-link-alt"></i> geahsoft.com</a>
+            </div>
+        </div>
+    </section>
 
     <section id="skills" class="styled-section">
         <h2 class="section-heading"><i class="fas fa-tools"></i> Skills</h2>
@@ -763,104 +990,104 @@
     <section id="experience" class="styled-section">
         <h2 class="section-heading"><i class="fas fa-briefcase"></i> Work Experience</h2>
         <ul class="experience-single-line">
-            <li><i class="fas fa-circle"></i> <strong>Director of AI and SWE&nbsp;</strong> GeahSoft,
-                Burlington, Canada | Jun 2024 - Present <button class="exp-more" type="button">Details</button></li>
+
+            <li><i class="fas fa-circle"></i> <strong>Founder&nbsp;</strong> Applicora, Ontario, Canada | Oct 2025 - Present <button class="exp-more" type="button">Details</button></li>
+            <ul class="exp-details">
+                <li>Building a career and talent AI platform redefining how job seekers and employers connect.</li>
+                <li>Developing AI-powered matching, resume analysis, and employer tools.</li>
+                <li>Leading product strategy, architecture, and go-to-market execution.</li>
+            </ul>
+
+            <li><i class="fas fa-circle"></i> <strong>Director of AI &amp; SWE&nbsp;</strong> Geahsoft, Ontario, Canada | Jun 2024 - Present <button class="exp-more" type="button">Details</button></li>
             <ul class="exp-details">
                 <li>Founded an AI consulting and custom software development practice after leaving a senior role at Oracle.</li>
-                <li>Built Applicora, a career and talent AI platform redefining how job seekers and employers connect in a broken market.</li>
+                <li>Built Applicora, a career and talent AI platform redefining how job seekers and employers connect.</li>
                 <li>Built Agentino, an intelligent automated post-job communication platform for the trades industry.</li>
             </ul>
 
-
-            <li><i class="fas fa-circle"></i> <strong>Multiple Roles&nbsp;</strong> Oracle, Toronto, Canada | May 2018 -
-                Jun 2024 <button class="exp-more" type="button">Details</button></li>
+            <li><i class="fas fa-circle"></i> <strong>Multiple Roles&nbsp;</strong> Oracle, Ontario, Canada | May 2018 - Jun 2024 <button class="exp-more" type="button">Details</button></li>
             <ul class="exp-details">
                 <li>Contributed to enterprise-scale products and platform modernization initiatives.</li>
                 <li>Designed and delivered cloud-native solutions showcased at Oracle CloudWorld.</li>
                 <li>Mentored peers and junior engineers, driving cross-team collaboration and delivery.</li>
             </ul>
-
-
             <ul class="experience-subbullets">
                 <li>
-                    Sr. Principal, Engineering <span class="badge">IC5</span>
-                    <span class="date">2024</span>
+                    Sr. Principal Engineer / Consulting Member of Technical Staff, Oracle Health <span class="badge">IC5</span>
+                    <span class="date">Jan 2024 – Jun 2024</span>
                 </li>
                 <li>
-                    Sr. Application Architect <span class="badge">IC5</span>
-                    <span class="date">2020–2024</span>
+                    Sr. Application Architect, Global Revenue Operations <span class="badge">IC5</span>
+                    <span class="date">Dec 2020 – Dec 2023</span>
                 </li>
                 <li>
-                    Sr. Technical Analyst <span class="badge">IC4</span>
-                    <span class="date">2018–2020</span>
+                    Sr. Software Analyst, North American Applications <span class="badge">IC4</span>
+                    <span class="date">May 2018 – Dec 2020</span>
                 </li>
             </ul>
 
-            <li><i class="fas fa-circle"></i> <strong>Software Development Project Manager&nbsp;</strong> Region of
-                York,
-                Newmarket, Canada | Apr 2016 - Apr 2018 <button class="exp-more" type="button">Details</button></li>
+            <li><i class="fas fa-circle"></i> <strong>Sr. Solutions Architect&nbsp;</strong> Talan – Oracle Technologies (formerly Insum), Mineola, NY | Dec 2017 - May 2018 <button class="exp-more" type="button">Details</button></li>
+            <ul class="exp-details">
+                <li>Delivered Oracle APEX solutions for enterprise clients at a specialized Oracle technology consultancy.</li>
+                <li>Bridged consulting and architecture, translating business requirements into technical solutions.</li>
+                <li>Contributed to pre-sales and client engagement efforts.</li>
+            </ul>
 
+            <li><i class="fas fa-circle"></i> <strong>Software Project Manager&nbsp;</strong> York Region (The Regional Municipality of York), Newmarket, Ontario | Apr 2016 - Dec 2017 <button class="exp-more" type="button">Details</button></li>
             <ul class="exp-details">
                 <li>Directed software projects for municipal government, ensuring compliance and timely delivery.</li>
                 <li>Coordinated cross-functional teams and external stakeholders to achieve program goals.</li>
                 <li>Delivered critical enterprise applications on time and within budget.</li>
             </ul>
 
-            <li><i class="fas fa-circle"></i> <strong>Software Development Project Manager&nbsp;</strong> Accenture,
-                Oakville, Canada | Mar 2014 - Apr 2016 <button class="exp-more" type="button">Details</button></li>
-
+            <li><i class="fas fa-circle"></i> <strong>Software Project Manager&nbsp;</strong> Accenture, Oakville, Ontario | Mar 2014 - Apr 2016 <button class="exp-more" type="button">Details</button></li>
             <ul class="exp-details">
+                <li>Callisto Integration, acquired by Accenture.</li>
                 <li>Directed enterprise integration projects for global clients (including post-acquisition).</li>
                 <li>Managed technical and business teams across geographies to deliver complex systems.</li>
                 <li>Oversaw budgets, schedules, and client expectations for large-scale implementations.</li>
             </ul>
 
-            <li><i class="fas fa-circle"></i> <strong>Oracle Applications Administrator&nbsp;</strong> Hatch,
-                Mississauga,
-                Canada | Nov 2011 - Mar 2014 <button class="exp-more" type="button">Details</button></li>
+            <li><i class="fas fa-circle"></i> <strong>Software Engineer, Oracle Apps&nbsp;</strong> Hatch, Mississauga, Ontario | Nov 2011 - Mar 2014 <button class="exp-more" type="button">Details</button></li>
             <ul class="exp-details">
-                <li>Administered and optimized Oracle applications supporting enterprise operations.</li>
-                <li>Partnered with development and business teams to ensure system stability and performance.</li>
-                <li>Delivered enhancements that improved operational efficiency across global teams.</li>
+                <li>Developed and enhanced Oracle applications supporting global engineering operations.</li>
+                <li>Partnered with business and IT teams to deliver system improvements and integrations.</li>
+                <li>Provided technical leadership on Oracle EBS customization and reporting.</li>
             </ul>
 
-
-            <li><i class="fas fa-circle"></i> <strong>Multiple Roles&nbsp;</strong> Thomson
-                Reuters,
-                New
-                York, USA amd Toronto, CA | Aug 2008 - Nov 2011 <button class="exp-more" type="button">Details</button>
-            </li>
+            <li><i class="fas fa-circle"></i> <strong>Technical Analyst&nbsp;</strong> Thomson Reuters, Toronto, Ontario | May 2010 - Nov 2011 <button class="exp-more" type="button">Details</button></li>
             <ul class="exp-details">
-                <li>Led distributed project teams across U.S. and international offices.</li>
-                <li>Directed major integration programs during the 2008 financial crisis, ensuring delivery despite
-                    client bank failures.</li>
+                <li>Relocated from the U.S. to Canada.</li>
+                <li>Bridged technology and business teams to drive software delivery and platform analysis.</li>
+                <li>Contributed to technical documentation and stakeholder alignment across global teams.</li>
+            </ul>
+
+            <li><i class="fas fa-circle"></i> <strong>Software Project Manager&nbsp;</strong> Seavus, New York, NY | Aug 2008 - May 2010 <button class="exp-more" type="button">Details</button></li>
+            <ul class="exp-details">
+                <li>Client: Thomson Reuters.</li>
+                <li>Led distributed project teams during the 2008 financial crisis.</li>
+                <li>Directed major integration programs while client banks were failing.</li>
                 <li>Bridged technology, stakeholders, and global delivery teams to align with business objectives.</li>
             </ul>
 
-
-            <ul class="experience-subbullets">
-                <li>
-                    Software Development Business Analyst (Canada), <span class="badge">Canada</span>
-                    <span class="date">2010–2011</span>
-                </li>
-                <li>
-                    Software Development Project Manager (U.S.) <span class="badge">US</span>
-                    <span class="date">2008–2010</span>
-                </li>
-
-            </ul>
-
-            <li><i class="fas fa-circle"></i> <strong>Sr. Oracle Software Developer&nbsp;</strong> QBE Insurance, Skopje,
-                North Macedonia | Jul 2002 - Aug 2008 <button class="exp-more" type="button">Details</button></li>
+            <li><i class="fas fa-circle"></i> <strong>Multiple Roles&nbsp;</strong> QBE Insurance, Skopje, North Macedonia | Jul 2002 - Aug 2008 <button class="exp-more" type="button">Details</button></li>
             <ul class="exp-details">
-                <li>Developed and enhanced core insurance systems in Oracle Forms/PLSQL.</li>
-                <li>Promoted to Senior Developer for leadership in critical system delivery.</li>
+                <li>Developed and enhanced core insurance systems in Oracle Forms/PL/SQL.</li>
+                <li>Promoted to Senior Software Engineer for leadership in critical system delivery.</li>
                 <li>Partnered with business units to streamline underwriting and claims processes.</li>
             </ul>
+            <ul class="experience-subbullets">
+                <li>
+                    Sr. Software Engineer <span class="badge">Senior</span>
+                    <span class="date">Jun 2006 – Aug 2008</span>
+                </li>
+                <li>
+                    Software Engineer
+                    <span class="date">Jul 2002 – May 2006</span>
+                </li>
+            </ul>
 
-      
-            <li><i class="fas fa-circle"></i> <strong>Engineering Officer (Lt.), Platoon Cmdr&nbsp;</strong> Min. of Defence, Skopje,
-                North Macedonia | Jun 2000 - Jun 2002 <button class="exp-more" type="button">Details</button></li>
+            <li><i class="fas fa-circle"></i> <strong>Engineering Officer (Lt.), Platoon Cmdr&nbsp;</strong> Min. of Defence, Skopje, North Macedonia | Jun 2000 - Jun 2002 <button class="exp-more" type="button">Details</button></li>
             <ul class="exp-details">
                 <li>Led an engineering platoon; planned training schedules, field operations, and logistics to meet readiness goals.</li>
                 <li>Managed equipment maintenance and safety compliance; ensured incident-response readiness.</li>
@@ -923,18 +1150,36 @@
         <h2 class="section-heading"><i class="fas fa-certificate"></i> Certifications</h2>
 
         <ul class="certifications-list">
-            <li><i class="fas fa-certificate"></i><span>Oracle Cloud Infrastructure 2025 Certified Foundations
-                    Associate</span></li>
-            <li><i class="fas fa-certificate"></i><span>Oracle Fusion Cloud Applications HCM Certified Foundations
-                    Associate</span></li>
-            <li><i class="fas fa-leaf"></i><span>MongoDB Data Modeling</span></li>
-            <li><i class="fas fa-certificate"></i><span>Oracle Application Express 18: Developer Certified
-                    Professional</span></li>
-            <li><i class="fas fa-clipboard-check"></i><span>Project Management Professional (PMP)® (2012-2021)</span>
-            </li>
-            <li><i class="fas fa-project-diagram"></i><span>Project Planning, Analysis, and Control</span></li>
-            <li><i class="fas fa-certificate"></i><span>Oracle Forms: Build Internet Applications (OCP)</span></li>
+            <li><i class="fas fa-certificate"></i><span>Oracle Cloud Infrastructure 2025 Certified Foundations Associate <em style="color:var(--muted-text); font-size:.85rem;">&mdash; Issued 2025</em></span></li>
+            <li><i class="fas fa-certificate"></i><span>Oracle Fusion Cloud Applications HCM Certified Foundations Associate <em style="color:var(--muted-text); font-size:.85rem;">&mdash; Issued 2025</em></span></li>
+            <li><i class="fas fa-leaf"></i><span>MongoDB Data Modeling <em style="color:var(--muted-text); font-size:.85rem;">&mdash; Issued 2024</em></span></li>
+            <li><i class="fas fa-certificate"></i><span>Oracle Application Express 18: Developer Certified Professional (OCP) <em style="color:var(--muted-text); font-size:.85rem;">&mdash; Issued 2019</em></span></li>
+            <li><i class="fas fa-clipboard-check"></i><span>Project Management Professional (PMP)&reg; <em style="color:var(--muted-text); font-size:.85rem;">&mdash; 2012 – 2021</em></span></li>
+            <li><i class="fas fa-project-diagram"></i><span>Project Planning, Analysis, and Control <em style="color:var(--muted-text); font-size:.85rem;">&mdash; 2012</em></span></li>
+            <li><i class="fas fa-certificate"></i><span>Oracle Forms: Build Internet Applications (OCP) <em style="color:var(--muted-text); font-size:.85rem;">&mdash; Issued 2005</em></span></li>
         </ul>
+    </section>
+
+    <section id="articles" class="styled-section">
+        <h2 class="section-heading"><i class="fas fa-pen-nib"></i> Articles &amp; Writing</h2>
+        <div class="article-card-grid">
+            <div class="article-card">
+                <div class="article-source"><i class="fab fa-linkedin"></i> LinkedIn</div>
+                <a href="https://www.linkedin.com/pulse/hiring-paradox-why-more-talent-means-less-success-igor-pandurski-qub0c/" target="_blank">The Hiring Paradox: Why More Talent Means Less Success</a>
+            </div>
+            <div class="article-card">
+                <div class="article-source"><i class="fab fa-linkedin"></i> LinkedIn</div>
+                <a href="https://www.linkedin.com/pulse/thrill-terror-context-switching-igor-pandurski-om9ee/" target="_blank">The Thrill &amp; Terror of Context Switching</a>
+            </div>
+            <div class="article-card">
+                <div class="article-source"><i class="fas fa-blog"></i> Geahsoft Blog</div>
+                <a href="https://geahsoft.com/blog/signs-your-business-is-ready-for-ai.html" target="_blank">Signs Your Business Is Ready for AI</a>
+            </div>
+            <div class="article-card">
+                <div class="article-source"><i class="fas fa-blog"></i> Geahsoft Blog</div>
+                <a href="https://geahsoft.com/blog/where-to-start-with-ai.html" target="_blank">Where to Start with AI</a>
+            </div>
+        </div>
     </section>
 
 
@@ -962,14 +1207,16 @@
         function openPdfModal(pdfPath) {
             const modal = document.getElementById('pdfModal');
             const embed = document.getElementById('pdfEmbed');
+            const dlLink = document.getElementById('pdfDownloadLink');
             embed.src = pdfPath;
+            if (dlLink) dlLink.href = pdfPath;
             modal.style.display = 'flex';
         }
 
         function closePdfModal() {
             const modal = document.getElementById('pdfModal');
             const embed = document.getElementById('pdfEmbed');
-            embed.src = ""; // Clear the source when closing
+            embed.src = "";
             modal.style.display = 'none';
         }
 
@@ -979,6 +1226,29 @@
                 closePdfModal();
             }
         };
+
+        // Dark mode toggle
+        (function () {
+            const toggle = document.getElementById('darkToggle');
+            const icon = toggle.querySelector('i');
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                icon.classList.replace('fa-moon', 'fa-sun');
+            }
+            toggle.addEventListener('click', function () {
+                const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                if (isDark) {
+                    document.documentElement.removeAttribute('data-theme');
+                    icon.classList.replace('fa-sun', 'fa-moon');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    icon.classList.replace('fa-moon', 'fa-sun');
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+        })();
     </script>
 
     <!-- Google tag (gtag.js) -->
@@ -995,6 +1265,10 @@
         <div class="modal-content">
             <span class="modal-close" onclick="closePdfModal()">&times;</span>
             <embed id="pdfEmbed" src="" type="application/pdf" width="100%" height="100%" />
+            <div class="pdf-download-link">
+                <p style="margin-bottom:.5rem; color:var(--muted-text);">PDF preview is not available on mobile.</p>
+                <a id="pdfDownloadLink" href="" download><i class="fas fa-download"></i> Download PDF</a>
+            </div>
         </div>
     </div>
 
