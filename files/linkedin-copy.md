@@ -151,7 +151,7 @@ Engineering role at a global engineering and project management firm.
 
 - Built and enhanced Oracle applications supporting operations across 60+ countries
 - Partnered with business and IT leadership to deliver system improvements and integrations
-- Provided technical leadership on enterprise Oracle EBS customization and reporting
+- Provided technical leadership on enterprise Oracle applications (Forms, Reports, WebLogic, Primavera) and reporting
 ```
 
 ---
