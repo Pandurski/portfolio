@@ -8,10 +8,10 @@
 ## HEADLINE
 
 ```
-Building at the intersection of AI, product, and enterprise scale | Founder, Applicora & Agentino | Ex-Oracle IC5 | Open to advisory & strategic partnerships
+Geahsoft | AI Consulting & Custom Software | Founder, Applicora & Agentino | Ex-Oracle IC5 | Open to advisory & strategic partnerships
 ```
 
-**Why this works:** Signals you're actively building (not job hunting). "Ex-Oracle IC5" gives instant credibility and level. "Open to advisory & strategic partnerships" tells recruiters you're reachable without saying "looking for work."
+**Why this works:** Leads with Geahsoft as the practice, then names the products underneath it. "Ex-Oracle IC5" gives instant credibility and level. "Open to advisory & strategic partnerships" tells recruiters you're reachable without saying "looking for work."
 
 ---
 
