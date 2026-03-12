@@ -48,9 +48,9 @@ Paste each block into the corresponding LinkedIn role's description field.
 ```
 Building a career and talent AI platform redefining how job seekers and employers connect in a market that's broken on both sides.
 
-- AI-powered matching, resume analysis, and employer tools
+- Proprietary 14-dimension matching algorithm
+- AI-powered resume analysis and employer tools
 - Leading product strategy, architecture, and go-to-market execution
-- Full-stack: Python, FastAPI, TypeScript, PostgreSQL, vector search
 
 applicora.com
 ```
