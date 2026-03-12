@@ -168,15 +168,14 @@ Relocated from the U.S. to Canada to take on a technical leadership role.
 
 ---
 
-### Software Project Manager | Seavus (Aug 2008 – May 2010)
+### Software Project/Program Manager | Seavus (Aug 2008 – May 2010)
 
 ```
-Client: Thomson Reuters. New York, NY.
+Client: Thomson Reuters. Promoted from Project Manager to Program Manager upon relocation to the U.S.
 
-Directed 8+ concurrent integration programs during the 2008 financial crisis while client institutions were failing around us.
+Managed an organization of 52 people including two project managers reporting to me. Directed 8+ concurrent integration programs during the 2008 financial crisis while client institutions were failing around us.
 
-- Led distributed project teams across U.S. and international offices
-- Delivered critical integrations under extreme pressure and collapsing timelines
+- Delivered critical integrations under extreme pressure and collapsing timelines across U.S. and international offices
 - Bridged technology, stakeholders, and global delivery teams at enterprise scale
 ```
 
