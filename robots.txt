@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /pdf-gen/
+
+Sitemap: https://pandurski.com/sitemap.xml
