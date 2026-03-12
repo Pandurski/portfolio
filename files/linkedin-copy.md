@@ -20,7 +20,7 @@ Geahsoft | AI Consulting & Custom Software | Founder, Applicora | Building Agent
 ```
 20+ years building enterprise software across four continents. Led teams of up to 15 engineers, managed multi-million-dollar programs, and built products showcased on the biggest stages. Directed 8+ concurrent integration programs during a financial crisis while client institutions were collapsing around us.
 
-In 2024, I left a senior role at Oracle (three promotions in six years, IC4 to IC5) to finish my MBA and start Geahsoft – an AI consulting and custom software development practice. I've built for enterprises and I've built for myself. The best work happens when you've done both.
+In 2024, I left a senior role at Oracle (three promotions in six years, IC4 to IC5) to complete my MBA and start Geahsoft – an AI consulting and custom software development practice. I've built for enterprises and I've built for myself. The best work happens when you've done both.
 
 That consulting work revealed problems deep enough to build on. Two products came out of it:
 
@@ -66,7 +66,7 @@ Consulting work revealed problems deep enough to build products around:
 - Applicora: career and talent AI platform (applicora.com)
 - Agentino: AI-powered automation for service businesses (agentino.app)
 
-Also completing MBA at Edinburgh Business School (Heriot-Watt University).
+MBA completed at Edinburgh Business School (Heriot-Watt University).
 
 geahsoft.com
 ```
