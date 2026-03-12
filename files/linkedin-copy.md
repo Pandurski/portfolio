@@ -159,7 +159,7 @@ Engineering role at a global engineering and project management firm.
 ### Technical Analyst | Thomson Reuters (May 2010 – Nov 2011)
 
 ```
-Relocated from the U.S. to Canada to take on a technical leadership role.
+Brought in-house by the client after managing their programs at Seavus. Relocated from the U.S. to Canada as a permanent hire.
 
 - Drove software delivery and platform analysis across global business units
 - Bridged technology and business teams on strategic platform decisions
