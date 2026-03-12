@@ -240,7 +240,5 @@ Commissioned officer. Led an engineering platoon of 30+ soldiers.
 - [ ] Paste descriptions into ALL experience roles (most are currently blank)
 - [ ] Add Military role if not present
 - [ ] Reorder Skills to put top 5 first
-- [ ] Turn ON "Open to Work" set to **Recruiters Only** (not public badge)
-- [ ] Set job preferences: Engineering Manager, Director of Engineering, VP Engineering, Principal Engineer
 - [ ] Add pandurski.com as website under Contact Info
 - [ ] Add geahsoft.com and agentino.app as additional websites
