@@ -190,9 +190,9 @@ Six years building core insurance systems. Promoted to Senior Software Engineer 
 #### Sr. Software Engineer (Jun 2006 – Aug 2008)
 
 ```
-Promoted to senior role for consistent delivery and technical leadership.
+Promoted to senior role for consistent delivery and technical leadership. Split between Tallinn, Estonia and Skopje, North Macedonia.
 
-- Led development of mission-critical insurance system modules
+- Led development of mission-critical insurance system modules across two countries
 - Drove engineering standards and mentored junior developers
 - Partnered with underwriting and claims leadership on system strategy
 ```
