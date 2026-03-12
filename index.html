@@ -238,22 +238,29 @@
 
         .skills-list {
             display: block;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
             list-style-type: none;
             padding-left: 0;
         }
 
         .skills-list li {
             color: var(--text-color);
-            padding: 6px 0;
+            padding: 3px 0;
             font-size: 0.95rem;
+        }
+
+        .skills-list li i {
+            color: var(--accent-color);
+            width: 1.2em;
+            text-align: center;
+            margin-right: 4px;
         }
 
         .skills-list li::before {
             content: "\2022";
             color: transparent;
             display: inline-block;
-            width: 1.2em;
+            width: 0;
         }
 
         .contact-links a {
