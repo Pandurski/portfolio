@@ -210,7 +210,7 @@ Built and maintained core insurance applications in Oracle Forms/PL/SQL.
 
 ### Engineering Officer (Lt.), Platoon Commander | Ministry of Defence (Jun 2000 – Jun 2002)
 
-**Note:** This role is NOT currently on your LinkedIn. Consider adding it – it's a differentiator that no other candidate has.
+**Status:** Added to LinkedIn. A differentiator that no other candidate has.
 
 ```
 Commissioned officer. Led an engineering platoon of 30+ soldiers.
@@ -235,10 +235,10 @@ Commissioned officer. Led an engineering platoon of 30+ soldiers.
 
 ## LINKEDIN SETTINGS CHECKLIST
 
-- [ ] Update headline
-- [ ] Update About section
-- [ ] Paste descriptions into ALL experience roles (most are currently blank)
-- [ ] Add Military role if not present
-- [ ] Reorder Skills to put top 5 first
-- [ ] Add pandurski.com as website under Contact Info
+- [x] Update headline
+- [x] Update About section
+- [x] Paste descriptions into ALL experience roles
+- [x] Add Military role
+- [ ] Reorder Skills to put **Artificial Intelligence** first (currently showing: Software Engineering, Cloud Architecture, Team Leadership)
+- [x] Add pandurski.com as website under Contact Info
 - [ ] Add geahsoft.com and agentino.app as additional websites
