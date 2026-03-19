@@ -15,7 +15,7 @@ Geahsoft | AI Solutions & Custom Software | Founder, Applicora | Ex-Oracle IC5 |
 ## ABOUT SECTION
 
 ```
-20+ years building enterprise software across four continents. Led teams of up to 15 engineers, managed multi-million-dollar programs, and built products showcased on the biggest stages. Directed 8+ concurrent integration programs during a financial crisis while client institutions were collapsing around us.
+20+ years building enterprise software across four continents. Led engineering teams of up to 15 and ran a program organisation of 52 people, managed multi-million-dollar programs, and built products showcased on the biggest stages. Directed 8+ concurrent integration programs during a financial crisis while client institutions were collapsing around us.
 
 In 2024, I left a senior role at Oracle (three promotions in six years, IC4 to IC5) to complete my MBA and start Geahsoft – an AI-first consulting and software development practice. I've built for enterprises and I've built for myself. The best work happens when you've done both.
 
