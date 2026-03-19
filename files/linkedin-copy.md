@@ -155,7 +155,7 @@ Engineering role at a global engineering and project management firm.
 
 ---
 
-### Technical Analyst | Thomson Reuters (May 2010 – Nov 2011)
+### Business Analyst (Technical Team, Software Development) | Thomson Reuters (May 2010 – Nov 2011)
 
 ```
 Brought in-house by the client after managing their programs at Seavus. Relocated from the U.S. to Canada as a permanent hire.
