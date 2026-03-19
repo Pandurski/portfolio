@@ -52,11 +52,11 @@ applicora.com
 ### Director of AI & SWE | Geahsoft (Jun 2024 – Present)
 
 ```
-Founded an AI-first consulting and software development practice after a senior career at Oracle. Advising businesses on AI strategy, building custom AI solutions, and developing proprietary AI products.
+Founded an AI-first consulting and software development practice after a senior career at Oracle; advising businesses on AI strategy, building custom AI solutions, and developing proprietary AI products.
 
-What emerged from consulting:
-- Applicora: AI-powered career and talent platform with proprietary matching (applicora.com)
-- Agentino: AI automation platform turning completed jobs into repeat revenue (agentino.app)
+- Incubated Applicora (spun out Oct 2025 as a separate entity) and Agentino — two AI products addressing distinct broken markets
+- Initiated Agentino — an AI revenue-recovery platform for service businesses automating follow-ups, reviews, referrals, and rebookings via SMS, email, and WhatsApp; currently in development
+- Introduced AI-driven workflow automation (n8n, OpenAI, Claude APIs) across client engagements, reducing average delivery cycle time by 25%
 
 MBA completed at Edinburgh Business School (Heriot-Watt University).
 
