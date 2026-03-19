@@ -172,7 +172,7 @@ Brought in-house by the client after managing their programs at Seavus. Relocate
 ```
 Client: Thomson Reuters. Promoted from Project Manager to Program Manager upon relocation to the U.S.
 
-Managed an organization of 52 people including two project managers reporting to me. Directed 8+ concurrent integration programs during the 2008 financial crisis while client institutions were failing around us.
+Ran a program organisation of 52 people — two Project Managers as direct reports, the rest in matrix and dotted-line structures — directing 8+ concurrent integration programs during the 2008 financial crisis while client institutions were failing around us.
 
 - Delivered critical integrations under extreme pressure and collapsing timelines across U.S. and international offices
 - Bridged technology, stakeholders, and global delivery teams at enterprise scale
