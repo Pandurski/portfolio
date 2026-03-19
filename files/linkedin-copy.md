@@ -36,14 +36,13 @@ If something here resonates, let's talk: igor@pandurski.com | pandurski.com
 
 ---
 
-### Founder | Applicora (Oct 2025 – Present)
+### Director | Applicora Inc. (Geahsoft spinoff) (Oct 2025 – Present)
 
 ```
-Building a career and talent AI platform redefining how job seekers and employers connect in a market that's broken on both sides.
+Spun Applicora out of Geahsoft as a dedicated AI career and talent platform — separate entity, same founding vision.
 
-- Proprietary 14-dimension matching algorithm
-- AI-powered resume analysis and employer tools
-- Leading product strategy, architecture, and go-to-market execution
+- Built and launched the consumer product using a 9-dimensional ATS scoring engine, and the B2B platform (biz.applicora.com) using a proprietary 14-dimension candidate-role matching algorithm
+- Leading product strategy, full-stack architecture, and go-to-market execution; live product with paying users
 
 applicora.com
 ```
