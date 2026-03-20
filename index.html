@@ -797,6 +797,24 @@
             background: rgba(255,255,255,.15);
             color: #fff;
         }
+        .site-nav .nav-icon {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .site-nav .nav-icon {
+                display: inline;
+                font-size: 1.1rem;
+            }
+            .site-nav .nav-label {
+                display: none;
+            }
+            .site-nav a {
+                padding: 8px 12px;
+            }
+            .site-nav {
+                gap: 2px;
+            }
+        }
 
         /* ===== Dark Mode ===== */
         [data-theme="dark"] {
@@ -947,14 +965,14 @@
 <body>
 
     <nav class="site-nav">
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#articles">Articles</a>
-        <a href="#contact">Contact</a>
+        <a href="#about"><i class="fas fa-user nav-icon"></i><span class="nav-label">About</span></a>
+        <a href="#products"><i class="fas fa-box-open nav-icon"></i><span class="nav-label">Products</span></a>
+        <a href="#skills"><i class="fas fa-cogs nav-icon"></i><span class="nav-label">Skills</span></a>
+        <a href="#experience"><i class="fas fa-briefcase nav-icon"></i><span class="nav-label">Experience</span></a>
+        <a href="#education"><i class="fas fa-graduation-cap nav-icon"></i><span class="nav-label">Education</span></a>
+        <a href="#certifications"><i class="fas fa-certificate nav-icon"></i><span class="nav-label">Certifications</span></a>
+        <a href="#articles"><i class="fas fa-newspaper nav-icon"></i><span class="nav-label">Articles</span></a>
+        <a href="#contact"><i class="fas fa-envelope nav-icon"></i><span class="nav-label">Contact</span></a>
         <button class="nav-toggle-dark" id="darkToggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
     </nav>
 
