@@ -19,11 +19,9 @@ Geahsoft | AI Solutions & Custom Software | Founder, Applicora | Ex-Oracle IC5 |
 
 In 2024, I left a senior role at Oracle (three promotions in six years, IC4 to IC5) to complete my MBA and start Geahsoft – an AI-first consulting and software development practice. I've built for enterprises and I've built for myself. The best work happens when you've done both.
 
-That work revealed problems deep enough to build on. Two AI products came out of it:
+That work revealed problems deep enough to build on:
 
 Applicora – a career and talent AI platform with a proprietary 14-dimension matching algorithm, redefining how job seekers and employers find each other in a market that's broken on both sides. (applicora.com)
-
-Agentino – an AI-powered automation platform for service businesses that turns every completed job into repeat revenue through intelligent follow-ups, reviews, referrals, and rebookings. (agentino.app)
 
 Currently building. Open to advisory roles, fractional leadership, and strategic partnerships.
 
@@ -54,8 +52,7 @@ applicora.com
 ```
 Founded an AI-first consulting and software development practice after a senior career at Oracle; advising businesses on AI strategy, building custom AI solutions, and developing proprietary AI products.
 
-- Incubated Applicora (spun out Oct 2025 as a separate entity) and Agentino — two AI products addressing distinct broken markets
-- Initiated Agentino — an AI revenue-recovery platform for service businesses automating follow-ups, reviews, referrals, and rebookings via SMS, email, and WhatsApp; currently in development
+- Incubated Applicora (spun out Oct 2025 as a separate entity) — an AI product addressing a distinct broken market
 - Introduced AI-driven workflow automation (n8n, OpenAI, Claude APIs) across client engagements, reducing average delivery cycle time by 25%
 
 MBA completed at Edinburgh Business School (Heriot-Watt University).
@@ -240,4 +237,4 @@ Commissioned officer. Led an engineering platoon of 30+ soldiers.
 - [x] Add Military role
 - [ ] Reorder Skills to put **Artificial Intelligence** first (currently showing: Software Engineering, Cloud Architecture, Team Leadership)
 - [x] Add pandurski.com as website under Contact Info
-- [ ] Add geahsoft.com and agentino.app as additional websites
+- [ ] Add geahsoft.com as additional website
