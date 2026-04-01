@@ -21,7 +21,7 @@ In 2024, I left a senior role at Oracle (three promotions in six years, IC4 to I
 
 That work revealed problems deep enough to build on:
 
-Applicora – a career and talent AI platform with a proprietary 14-dimension matching algorithm, redefining how job seekers and employers find each other in a market that's broken on both sides. (applicora.com)
+Applicora – a career AI platform redefining how job seekers find jobs with 9-dimensional ATS scoring. (applicora.com)
 
 Currently building. Open to advisory roles, fractional leadership, and strategic partnerships.
 
@@ -37,9 +37,9 @@ If something here resonates, let's talk: igor@pandurski.com | pandurski.com
 ### Director | Applicora Inc. (Geahsoft spinoff) (Oct 2025 – Present)
 
 ```
-Spun Applicora out of Geahsoft as a dedicated AI career and talent platform — separate entity, same founding vision.
+Spun Applicora out of Geahsoft as a dedicated AI career platform — separate entity, same founding vision.
 
-- Built and launched the consumer product using a 9-dimensional ATS scoring engine, and the B2B platform (biz.applicora.com) using a proprietary 14-dimension candidate-role matching algorithm
+- Built and launched the product using a 9-dimensional ATS scoring engine
 - Leading product strategy, full-stack architecture, and go-to-market execution; live product with paying users
 
 applicora.com
